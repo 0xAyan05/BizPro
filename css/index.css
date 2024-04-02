@@ -33,7 +33,7 @@ html {
 }
 
 .logo {
-    margin-right: auto;
+   float: right;
 }
 
 .navbar ul {
