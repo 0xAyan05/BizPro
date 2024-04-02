@@ -19,7 +19,9 @@
           <li><a href="#">Home</a></li>
           <li><a href="#">Profile</a></li>
           <li><a href="#">About</a></li>
-          <li class="join-btn" onclick="showRegistrationForm()"><a href="#">Join Us</a></li>
+          <li class="join-btn" onclick="showRegistrationForm()">
+            <a href="#">Join Us</a>
+          </li>
           <span id="close-menu-btn" class="material-symbols-outlined"
             >close</span
           >
@@ -52,41 +54,73 @@
         </div>
       </div>
     </section>
-    <div id="registration-form-container" class="hidden">
-      <div id="registration-form">
-        <h2>Register</h2>
-        <form action="#" class="registration-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required><br>
-  
-          <label for="contact">Contact Number:</label>
-          <input type="tel" id="contact" name="contact" required><br>
-  
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br>
-  
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required><br>
-  
-          <button type="submit">Register</button>
-        </form>
-        <button id="close-registration-form" onclick="closeRegistrationForm()">Close</button>
-      </div>
-    </div>
+    <div id="user-authentication-container" class="hidden">
+      <div id="user-authentication" class="authentication-box">
+        <h2>Welcome</h2>
+        <div id="registration-form" class="auth-form">
+          <h3>Register</h3>
+          <form action="#" class="registration-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br />
 
-    <div id="login-form-container" class="hidden">
-      <div id="login-form">
-        <h2>Login</h2>
-        <form action="#" class="login-form">
-          <label for="login-email">Email:</label>
-          <input type="email" id="login-email" name="login-email" required><br>
-  
-          <label for="login-password">Password:</label>
-          <input type="password" id="login-password" name="login-password" required><br>
-  
-          <button type="submit">Login</button>
-        </form>
-        <button id="close-login-form">Close</button>
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required /><br />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+            /><br />
+
+            <button type="submit">Register</button>
+          </form>
+          <button class="switch-form-btn" onclick="switchForm('login')">
+            Already have an account? Login
+          </button>
+        </div>
+        <div id="login-form" class="auth-form hidden">
+          <h3>Login</h3>
+          <form action="#" class="login-form">
+            <label for="login-email">Email:</label>
+            <input
+              type="email"
+              id="login-email"
+              name="login-email"
+              required
+            /><br />
+
+            <label for="login-password">Password:</label>
+            <input
+              type="password"
+              id="login-password"
+              name="login-password"
+              required
+            /><br />
+
+            <button type="submit">Login</button>
+          </form>
+          <button class="switch-form-btn" onclick="switchForm('registration')">
+            Don't have an account? Register
+          </button>
+        </div>
+        <div id="social-auth">
+          <button onclick="continueWithGoogle()">Continue with Google</button>
+          <button onclick="continueWithFacebook()">
+            Continue with Facebook
+          </button>
+          <button onclick="continueWithEmail()">Continue with Email</button>
+        </div>
+        <button
+          id="close-authentication-form"
+          onclick="closeAuthenticationForm()"
+        >
+          Close
+        </button>
       </div>
     </div>
     <script src="/js/index.js"></script>
