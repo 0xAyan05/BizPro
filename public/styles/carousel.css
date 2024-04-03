@@ -38,14 +38,14 @@ gap: 10px;
 overflow-y: hidden;
 overflow-x: scroll;
 }
-.carousel-container .card{
+.carousel .card{
     display: flex;
     max-width: 20rem;
     position: relative;
     background-color: cadetblue;
 }
-.carousel-container .card {
-    width: 100%;
+.carousel-container .card img {
+   
 }
 .carousel-container .card p {
     
