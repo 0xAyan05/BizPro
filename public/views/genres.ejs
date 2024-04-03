@@ -19,10 +19,10 @@
                 <div class="course-title"><%= e.businessOnlineCourseTitle %></div>
                 <div class="course-expert-name"><%= e.name %></div>
                 <div class="course-description"><%= e.courseDescription %></div>
-                <div class="price">P <%= e.price %></div>
+                <div class="price">₱<%= e.price %></div>
                 <div class="ratings">
                     <% for (let i=0; i< e.ratings; i++) { %>
-                        <div class="stars"></div>
+                        <div class="stars">★</div>
                         <% } %>
                 </div>
             </div>
