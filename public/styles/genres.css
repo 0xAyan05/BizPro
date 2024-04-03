@@ -15,9 +15,15 @@
             <% }) %>
     </div>
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
+    background-image: linear-gradient(135deg, #062325, #143e42, #2f686d, #387b81, #3d8e94);
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .header {
@@ -25,53 +31,86 @@ body {
     font-size: 2.5rem;
     padding: 1rem 2rem;
     overflow: hidden;
+    background: transparent;
 }
+
 .courses-container {
     width: 85%;
     height: fit-content;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 80px;
+    margin: 20px auto;
 }
-.course-card{
-    background-color: bisque;
-    width: 15rem;
-    height: fit-content;
+
+
+.course-card {
+    background-color: #062325;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0.5rem;
-    text-align: start;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    position: relative;
+    overflow: hidden;
 }
+
+.course-card:hover {
+    background-color: rgba(255, 255, 255, 0.036);
+}
+
+
+.course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(47, 104, 109, 0.4) 0%, rgba(56, 123, 129, 0.6) 50%, rgba(61, 142, 148, 0.4) 100%);
+    z-index: -1;
+}
+
+
 .course-description {
     height: 3.65rem;
     overflow: hidden;
-    color: rgb(91, 91, 91);
+    color: #ffffff;
+    margin-top: 10px;
 }
 
-.course-picture{
+.course-picture {
     width: 95%;
     height: 10rem;
-    background:  linear-gradient(135deg, #062325, #143e42, #2f686d, #387b81, #3d8e94);
+    background: linear-gradient(135deg, #062325, #143e42, #2f686d, #387b81, #3d8e94);
 }
 
 .course-title {
     margin: 10px 0px;
-    font-weight: bolder;
+    font-weight: bold;
     height: 2.3rem;
     overflow: hidden;
+    color: #fff;
 }
 
 .ratings {
     display: flex;
     gap: 2px;
+    margin-top: 10px;
 }
-.stars{
+
+.stars {
     padding: 4px;
-    background: goldenrod;
+    background: #ffbb00;
+    border-radius: 50%;
 }
+
 .price {
-    margin: 5px 0px;
+    margin-top: auto;
     font-size: 1rem;
     font-weight: bold;
+    color: #ffbb00;
 }
