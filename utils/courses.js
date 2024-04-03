@@ -45,6 +45,186 @@ const courses = [
     "imageUrl": "https://example.com/ava_patel.jpg"
   },
   {
+    "name": "Benjamin Carter",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Advanced Business Analysis Techniques",
+    "courseDescription": "Explore advanced techniques for business analysis, including decision trees, regression analysis, and scenario planning.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/benjamin_carter.jpg"
+  },
+  {
+    "name": "Victoria Mitchell",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Quantitative Analysis for Business",
+    "courseDescription": "Learn how to use quantitative analysis methods to analyze business data and make informed decisions.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/victoria_mitchell.jpg"
+  },
+  {
+    "name": "Daniel Cooper",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Process Analysis and Optimization",
+    "courseDescription": "Master the art of analyzing and optimizing business processes to drive efficiency and achieve strategic objectives.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/daniel_cooper.jpg"
+  },
+  {
+    "name": "Hannah Rodriguez",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Strategic Business Analysis",
+    "courseDescription": "Learn how to conduct strategic business analysis to identify opportunities, assess risks, and develop actionable plans.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/hannah_rodriguez.jpg"
+  },
+  {
+    "name": "Christopher Martinez",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Process Analysis Frameworks",
+    "courseDescription": "Explore different frameworks for analyzing business processes and selecting the most appropriate ones for your organization.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/christopher_martinez.jpg"
+  },
+  {
+    "name": "Madison Hall",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Analysis Essentials",
+    "courseDescription": "Master the essential skills and techniques of business analysis to drive successful business outcomes.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/madison_hall.jpg"
+  },
+  {
+    "name": "Elijah Green",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Data Analysis Strategies",
+    "courseDescription": "Learn effective strategies for analyzing business data to gain insights, make decisions, and drive business growth.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/elijah_green.jpg"
+  },
+  {
+    "name": "Sophia Baker",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Process Analysis Fundamentals",
+    "courseDescription": "Learn the fundamentals of business process analysis, including process identification, documentation, and optimization.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/sophia_baker.jpg"
+  },
+  {
+    "name": "Jack Evans",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Analysis and Decision Making",
+    "courseDescription": "Explore how business analysis informs decision-making processes and drives organizational success.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/jack_evans.jpg"
+  },
+  {
+    "name": "Ava Thompson",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Process Analysis Techniques",
+    "courseDescription": "Discover a variety of techniques for analyzing business processes and identifying opportunities for improvement.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/ava_thompson.jpg"
+  },
+  {
+    "name": "William Scott",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Analysis for Project Managers",
+    "courseDescription": "Learn how to apply business analysis techniques to project management processes to deliver successful projects.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/william_scott.jpg"
+  },
+  {
+    "name": "Sophie King",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Process Analysis Tools",
+    "courseDescription": "Explore a variety of tools and software used for business process analysis and optimization.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/sophie_king.jpg"
+  },
+  {
+    "name": "Liam Young",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Analysis for Agile Teams",
+    "courseDescription": "Learn how to apply business analysis techniques within agile teams to deliver value incrementally and adapt to change.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/liam_young.jpg"
+  },
+  {
+    "name": "Aria Lee",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Process Analysis Best Practices",
+    "courseDescription": "Discover best practices for conducting business process analysis to drive efficiency and innovation in your organization.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/aria_lee.jpg"
+  },
+  {
+    "name": "Lucas Adams",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Data Analysis Models",
+    "courseDescription": "Explore various data analysis models and techniques used for analyzing business data and making data-driven decisions.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/lucas_adams.jpg"
+  },
+  {
+    "name": "Ella Hill",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Process Analysis Strategies",
+    "courseDescription": "Learn effective strategies for analyzing and improving business processes to drive organizational success.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/ella_hill.jpg"
+  },
+  {
+    "name": "Henry Baker",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Analysis for Product Managers",
+    "courseDescription": "Learn how to use business analysis techniques to define product requirements and drive product development.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/henry_baker.jpg"
+  },
+  {
+    "name": "Luna Rodriguez",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Process Analysis Case Studies",
+    "courseDescription": "Explore real-world case studies of successful business process analysis projects and learn valuable lessons from them.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/luna_rodriguez.jpg"
+  },
+  {
+    "name": "Owen Nelson",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Business Analysis for Non-Profit Organizations",
+    "courseDescription": "Learn how to apply business analysis techniques to non-profit organizations to drive social impact and achieve mission objectives.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/owen_nelson.jpg"
+  },
+  {
+    "name": "Isabella Perez",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "Business Process Analysis Workshop",
+    "courseDescription": "Participate in interactive workshops to learn practical techniques for analyzing and optimizing business processes.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/isabella_perez.jpg"
+  },
+  {
     "name": "Ethan Kim",
     "isVerifiedExpert": false,
     "businessOnlineCourseTitle": "AI-Powered Customer Experience",
