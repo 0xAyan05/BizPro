@@ -1,15 +1,17 @@
 .carousel-services-section {
     display: flex;
     justify-content: center;
-    width: 81.48rem;
+    width: 100%;
     height: 100vh;
     border: none;
+    position: relative;
 }
 
 .carousel-container {
+    margin-top: 5rem;
     position: relative;
     display: flex;
-    width: 90%;
+    width: 87%;
     height: 20rem;
     background-color: transparent;
 }
@@ -63,4 +65,8 @@
 .popCourse {
     margin: 19px;
     color: #fff;
+    left: -1rem;
+    top: -4rem;
+    z-index: 200;
+    position: absolute;
 }
