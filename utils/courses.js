@@ -1,805 +1,2345 @@
 const courses = [
     {
-      "name": "Maria Santos",
-      "business_online_course_title": "Mastering E-commerce: From Startup to Success",
-      "course_description": "Learn the ins and outs of building a successful e-commerce business from scratch. From product sourcing to digital marketing strategies, this course covers everything you need to know to thrive in the online marketplace.",
-      "ratings": 5,
-      "price": 1500,
-      "image_url": "https://example.com/image1.jpg"
-    },
-    {
-      "name": "Juan Dela Cruz",
-      "business_online_course_title": "Digital Marketing Fundamentals for Small Businesses",
-      "course_description": "Discover essential digital marketing techniques tailored specifically for small businesses. This course covers topics such as social media marketing, email marketing, and SEO to help you grow your online presence.",
-      "ratings": 4,
-      "price": 1000,
-      "image_url": "https://example.com/image2.jpg"
-    },
-    {
-      "name": "Lorna Reyes",
-      "business_online_course_title": "Financial Management for Entrepreneurs",
-      "course_description": "Gain a comprehensive understanding of financial management principles and practices crucial for entrepreneurial success. Learn how to manage budgets, analyze financial statements, and make strategic financial decisions.",
-      "ratings": 5,
-      "price": 1200,
-      "image_url": "https://example.com/image3.jpg"
-    },
-    {
-      "name": "Ramon Garcia",
-      "business_online_course_title": "The Art of Business Negotiation",
-      "course_description": "Enhance your negotiation skills and learn effective strategies for achieving win-win outcomes in business deals. This course covers negotiation techniques, tactics, and case studies to help you become a proficient negotiator.",
-      "ratings": 4,
-      "price": 800,
-      "image_url": "https://example.com/image4.jpg"
-    },
-    {
-      "name": "Carmen Hernandez",
-      "business_online_course_title": "Leadership Essentials for Entrepreneurs",
-      "course_description": "Develop crucial leadership skills necessary for leading successful entrepreneurial ventures. Learn how to inspire teams, make tough decisions, and foster a positive organizational culture.",
-      "ratings": 4,
-      "price": 900,
-      "image_url": "https://example.com/image5.jpg"
-    },
-    {
-      "name": "Josefina Lim",
-      "business_online_course_title": "Strategic Business Planning: From Vision to Execution",
-      "course_description": "Master the art of strategic planning to drive business growth and success. This course covers the process of crafting a robust business plan, setting actionable goals, and executing strategies effectively.",
-      "ratings": 5,
-      "price": 1300,
-      "image_url": "https://example.com/image6.jpg"
-    },
-    {
-      "name": "Ricardo Cruz",
-      "business_online_course_title": "Fundamentals of Entrepreneurship",
-      "course_description": "Learn the fundamental principles of entrepreneurship, including idea generation, market analysis, and business model development. Gain insights into what it takes to launch and sustain a successful business.",
-      "ratings": 4,
-      "price": 700,
-      "image_url": "https://example.com/image7.jpg"
-    },
-    {
-      "name": "Elena Martinez",
-      "business_online_course_title": "Social Media Strategies for Business Growth",
-      "course_description": "Unlock the power of social media to grow your business. This course covers advanced social media strategies, content creation, and community engagement techniques to drive brand awareness and customer engagement.",
-      "ratings": 5,
-      "price": 1100,
-      "image_url": "https://example.com/image8.jpg"
-    },
-    {
-      "name": "Antonio Santos",
-      "business_online_course_title": "Effective Time Management for Entrepreneurs",
-      "course_description": "Master the art of time management and productivity to maximize your entrepreneurial success. Learn practical techniques for prioritizing tasks, minimizing distractions, and optimizing workflow.",
-      "ratings": 4,
-      "price": 950,
-      "image_url": "https://example.com/image9.jpg"
-    },
-    {
-      "name": "Gloria Fernandez",
-      "business_online_course_title": "Building a Successful Startup: From Idea to Launch",
-      "course_description": "Navigate the journey of building a successful startup from ideation to launch. This course covers ideation techniques, market validation, product development, and launch strategies.",
-      "ratings": 5,
-      "price": 1400,
-      "image_url": "https://example.com/image10.jpg"
-    },
-    {
-      "name": "Romeo Gonzales",
-      "business_online_course_title": "Effective Business Communication Strategies",
-      "course_description": "Enhance your communication skills to effectively convey your message in a business environment. Learn techniques for verbal, written, and non-verbal communication to build rapport and influence stakeholders.",
-      "ratings": 4,
-      "price": 850,
-      "image_url": "https://example.com/image11.jpg"
-    },
-    {
-      "name": "Isabel Reyes",
-      "business_online_course_title": "The Psychology of Selling: Persuasion Techniques for Entrepreneurs",
-      "course_description": "Explore the psychology behind successful selling and learn persuasion techniques to boost your sales effectiveness. Understand consumer behavior, overcome objections, and close deals with confidence.",
-      "ratings": 5,
-      "price": 1200,
-      "image_url": "https://example.com/image12.jpg"
-    },
-    {
-      "name": "Rodrigo Santos",
-      "business_online_course_title": "Mastering Business Analytics: Data-Driven Decision Making",
-      "course_description": "Harness the power of business analytics to make informed decisions and drive business growth. Learn how to collect, analyze, and interpret data to gain valuable insights for strategic decision-making.",
-      "ratings": 4,
-      "price": 1000,
-      "image_url": "https://example.com/image13.jpg"
-    },
-    {
-      "name": "Luz Garcia",
-      "business_online_course_title": "The Fundamentals of Financial Accounting",
-      "course_description": "Gain a solid understanding of financial accounting principles essential for entrepreneurs. Learn how to prepare financial statements, interpret financial data, and make informed business decisions.",
-      "ratings": 5,
-      "price": 1150,
-      "image_url": "https://example.com/image14.jpg"
-    },
-    {
-      "name": "Eduardo Reyes",
-      "business_online_course_title": "Building a Strong Personal Brand Online",
-      "course_description": "Learn how to build a compelling personal brand online to attract opportunities and grow your business. Discover strategies for creating engaging content, optimizing profiles, and networking effectively.",
-      "ratings": 4,
-      "price": 900,
-      "image_url": "https://example.com/image15.jpg"
-    },
-    {
-      "name": "Cecilia Cruz",
-      "business_online_course_title": "Effective Business Networking Strategies",
-      "course_description": "Master the art of networking to build valuable connections and expand your business opportunities. Learn proven networking strategies, etiquette, and relationship-building techniques.",
-      "ratings": 5,
-      "price": 1000,
-      "image_url": "https://example.com/image16.jpg"
-    },
-    {
-      "name": "Fernando Hernandez",
-      "business_online_course_title": "Entrepreneurial Mindset: Unlocking Your Potential",
-      "course_description": "Cultivate an entrepreneurial mindset to unleash your full potential and drive success in business. Learn how to think creatively, embrace challenges, and seize opportunities in the entrepreneurial journey.",
-      "ratings": 4,
-      "price": 950,
-      "image_url": "https://example.com/image17.jpg"
-    },
-    {
-      "name": "Rosalinda Gomez",
-      "business_online_course_title": "Effective Project Management for Entrepreneurs",
-      "course_description": "Learn essential project management skills to effectively plan, execute, and monitor projects in your entrepreneurial ventures. Discover tools, techniques, and best practices for successful project delivery.",
-      "ratings": 5,
-      "price": 1100,
-      "image_url": "https://example.com/image18.jpg"
-    },
-    {
-      "name": "Alejandro Martinez",
-      "business_online_course_title": "Mastering Customer Relationship Management",
-      "course_description": "Discover strategies for building and maintaining strong customer relationships to drive business growth. Learn how to leverage CRM tools, personalize interactions, and deliver exceptional customer experiences.",
-      "ratings": 4,
-      "price": 1000,
-      "image_url": "https://example.com/image19.jpg"
-    },
-    {
-      "name": "Cristina Lopez",
-      "business_online_course_title": "The Art of Business Storytelling",
-      "course_description": "Learn how to craft compelling stories to engage, inspire, and persuade your audience in a business context. Explore storytelling techniques, narrative structures, and emotional resonance.",
-      "ratings": 5,
-      "price": 1200,
-      "image_url": "https://example.com/image20.jpg"
-    },
-    {
-        "name": "Andres Reyes",
-        "business_online_course_title": "Entrepreneurial Finance: Managing Finances for Growth",
-        "course_description": "Learn how to effectively manage finances to fuel the growth of your entrepreneurial venture. Explore topics such as budgeting, financial forecasting, and capital raising strategies.",
-        "ratings": 4,
-        "price": 1250,
-        "image_url": "https://example.com/image21.jpg"
-      },
-      {
-        "name": "Marissa Gonzales",
-        "business_online_course_title": "Effective Marketing Strategies for Small Businesses",
-        "course_description": "Discover proven marketing strategies tailored for small businesses to attract customers and boost sales. Learn about branding, digital marketing channels, and customer acquisition techniques.",
+        "name": "Maria Santos",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Mastering E-commerce Strategies",
+        "courseDescription": "Learn advanced techniques for optimizing your e-commerce business and increasing sales.",
         "ratings": 5,
-        "price": 1350,
-        "image_url": "https://example.com/image22.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/maria_santos.jpg"
       },
       {
-        "name": "Arnold Cruz",
-        "business_online_course_title": "The Art of Entrepreneurial Innovation",
-        "course_description": "Explore the principles and practices of innovation in entrepreneurship. Learn how to foster a culture of innovation, generate new ideas, and execute innovative projects to stay ahead in the market.",
-        "ratings": 4,
-        "price": 1100,
-        "image_url": "https://example.com/image23.jpg"
-      },
-      {
-        "name": "Diana Santos",
-        "business_online_course_title": "Building a Profitable Online Store",
-        "course_description": "Unlock the secrets to building and scaling a profitable online store. From product selection to conversion optimization, this course covers essential strategies for e-commerce success.",
-        "ratings": 5,
-        "price": 1400,
-        "image_url": "https://example.com/image24.jpg"
-      },
-      {
-        "name": "Pedro Hernandez",
-        "business_online_course_title": "Effective Team Management for Entrepreneurs",
-        "course_description": "Learn how to build and lead high-performing teams in your entrepreneurial venture. Explore team dynamics, communication strategies, and conflict resolution techniques.",
-        "ratings": 4,
-        "price": 950,
-        "image_url": "https://example.com/image25.jpg"
-      },
-      {
-        "name": "Anna Dela Cruz",
-        "business_online_course_title": "Strategic Pricing Strategies for Business Growth",
-        "course_description": "Discover how to develop strategic pricing strategies to drive business growth and profitability. Learn about pricing models, value-based pricing, and pricing optimization techniques.",
-        "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image26.jpg"
-      },
-      {
-        "name": "Martin Reyes",
-        "business_online_course_title": "The Lean Startup Methodology",
-        "course_description": "Master the principles of the lean startup methodology to build and grow your business efficiently. Learn how to validate ideas, iterate quickly, and minimize waste in the startup process.",
-        "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image27.jpg"
-      },
-      {
-        "name": "Lucia Gomez",
-        "business_online_course_title": "Effective Customer Service Strategies",
-        "course_description": "Discover strategies for delivering exceptional customer service to build loyalty and drive business success. Learn how to handle customer inquiries, resolve complaints, and create positive customer experiences.",
-        "ratings": 5,
-        "price": 1150,
-        "image_url": "https://example.com/image28.jpg"
-      },
-      {
-        "name": "Francisco Hernandez",
-        "business_online_course_title": "The Fundamentals of Business Law for Entrepreneurs",
-        "course_description": "Gain a foundational understanding of business law essentials relevant to entrepreneurs. Learn about contracts, intellectual property, liability, and legal compliance.",
-        "ratings": 4,
-        "price": 900,
-        "image_url": "https://example.com/image29.jpg"
-      },
-      {
-        "name": "Gabriela Garcia",
-        "business_online_course_title": "Digital Transformation for Small Businesses",
-        "course_description": "Learn how to embrace digital transformation to stay competitive and drive growth in your small business. Explore digital technologies, implementation strategies, and change management.",
-        "ratings": 5,
-        "price": 1200,
-        "image_url": "https://example.com/image30.jpg"
-      },
-      {
-        "name": "Manuel Santos",
-        "business_online_course_title": "Effective Brand Building Strategies",
-        "course_description": "Discover how to build a strong brand that resonates with your target audience and sets you apart from the competition. Learn branding fundamentals, brand identity development, and brand management.",
+        "name": "Juan Dela Cruz",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Digital Marketing Tactics",
+        "courseDescription": "Discover proven digital marketing strategies to boost your online presence and attract more customers.",
         "ratings": 4,
         "price": 1000,
-        "image_url": "https://example.com/image31.jpg"
+        "imageUrl": "https://example.com/juan_dela_cruz.jpg"
       },
       {
-        "name": "Carolina Cruz",
-        "business_online_course_title": "The Power of Emotional Intelligence in Leadership",
-        "course_description": "Develop your emotional intelligence to become a more effective leader in your entrepreneurial journey. Learn how to understand and manage emotions, build strong relationships, and inspire others.",
+        "name": "Lorna Reyes",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Finance Fundamentals for Entrepreneurs",
+        "courseDescription": "Gain essential financial management skills to effectively run your business and make informed decisions.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image32.jpg"
+        "price": 1200,
+        "imageUrl": "https://example.com/lorna_reyes.jpg"
       },
       {
-        "name": "Roberto Dela Cruz",
-        "business_online_course_title": "Strategies for Scaling Your Business",
-        "course_description": "Explore strategies and tactics for scaling your business sustainably. Learn about expansion models, operational scalability, and organizational growth strategies.",
+        "name": "Miguel Garcia",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Business Planning",
+        "courseDescription": "Learn how to develop and implement effective business plans to achieve your company's goals.",
+        "ratings": 4,
+        "price": 800,
+        "imageUrl": "https://example.com/miguel_garcia.jpg"
+      },
+      {
+        "name": "Ana Santiago",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Social Media Marketing Mastery",
+        "courseDescription": "Unlock the power of social media to grow your brand and engage with your target audience effectively.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/ana_santiago.jpg"
+      },
+      {
+        "name": "Pedro Martinez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Leadership Essentials for Business Owners",
+        "courseDescription": "Develop crucial leadership skills to inspire and lead your team towards success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/pedro_martinez.jpg"
+      },
+      {
+        "name": "Carmen Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Customer Service Strategies",
+        "courseDescription": "Learn how to deliver exceptional customer service to enhance customer satisfaction and loyalty.",
+        "ratings": 4,
+        "price": 900,
+        "imageUrl": "https://example.com/carmen_hernandez.jpg"
+      },
+      {
+        "name": "Ramon Santos",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Successful Business Negotiation Techniques",
+        "courseDescription": "Master the art of negotiation to secure favorable deals and agreements for your business.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/ramon_santos.jpg"
+      },
+      {
+        "name": "Lea Cruz",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Time Management for Entrepreneurs",
+        "courseDescription": "Learn practical time management techniques to increase productivity and achieve work-life balance.",
+        "ratings": 4,
+        "price": 700,
+        "imageUrl": "https://example.com/lea_cruz.jpg"
+      },
+      {
+        "name": "Antonio Reyes",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Essentials of Business Networking",
+        "courseDescription": "Discover effective networking strategies to expand your professional connections and grow your business.",
         "ratings": 4,
         "price": 1100,
-        "image_url": "https://example.com/image33.jpg"
+        "imageUrl": "https://example.com/antonio_reyes.jpg"
       },
       {
-        "name": "Teresa Garcia",
-        "business_online_course_title": "The Art of Product Management",
-        "course_description": "Master the principles and practices of product management to develop and launch successful products. Learn about product lifecycle, market research, and product roadmapping.",
-        "ratings": 5,
-        "price": 1350,
-        "image_url": "https://example.com/image34.jpg"
-      },
-      {
-        "name": "Santiago Hernandez",
-        "business_online_course_title": "Effective Business Networking Strategies",
-        "course_description": "Master the art of networking to build valuable connections and expand your business opportunities. Learn proven networking strategies, etiquette, and relationship-building techniques.",
-        "ratings": 4,
-        "price": 950,
-        "image_url": "https://example.com/image35.jpg"
-      },
-      {
-        "name": "Marisol Dela Cruz",
-        "business_online_course_title": "The Science of Decision Making in Business",
-        "course_description": "Explore the cognitive processes behind effective decision making in business. Learn decision-making frameworks, risk analysis techniques, and strategies for making informed choices.",
+        "name": "Elena Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Planning for Small Business Owners",
+        "courseDescription": "Learn how to create and implement a comprehensive financial plan to ensure the success of your small business.",
         "ratings": 5,
         "price": 1300,
-        "image_url": "https://example.com/image36.jpg"
+        "imageUrl": "https://example.com/elena_gomez.jpg"
+      },
+      {
+        "name": "Josefina Rivera",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Business Communication Skills",
+        "courseDescription": "Enhance your communication skills to convey your message clearly and effectively in a business setting.",
+        "ratings": 4,
+        "price": 1000,
+        "imageUrl": "https://example.com/josefina_rivera.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Innovative Product Development Strategies",
+        "courseDescription": "Learn creative approaches to product development that will set your business apart from the competition.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Isabel Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Essentials of Business Law",
+        "courseDescription": "Gain a comprehensive understanding of business law to protect your company's interests and mitigate legal risks.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/isabel_ramirez.jpg"
       },
       {
         "name": "Fernando Lopez",
-        "business_online_course_title": "Strategic Business Planning for Growth",
-        "course_description": "Develop a strategic business plan to drive growth and success in your entrepreneurial venture. Learn how to set goals, identify opportunities, and allocate resources effectively.",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Pricing Strategies",
+        "courseDescription": "Learn how to set prices strategically to maximize profits and maintain competitiveness in the market.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/fernando_lopez.jpg"
+      },
+      {
+        "name": "Cristina Garcia",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Branding Strategies",
+        "courseDescription": "Discover proven branding strategies to build a strong and memorable brand identity for your business.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/cristina_garcia.jpg"
+      },
+      {
+        "name": "Marcelo Santos",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Mindset Mastery",
+        "courseDescription": "Cultivate the mindset of a successful entrepreneur and overcome challenges to achieve your business goals.",
+        "ratings": 4,
+        "price": 900,
+        "imageUrl": "https://example.com/marcelo_santos.jpg"
+      },
+      {
+        "name": "Patricia Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Sales Strategies",
+        "courseDescription": "Learn powerful sales techniques to close deals and drive revenue for your business.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/patricia_fernandez.jpg"
+      },
+      {
+        "name": "Rodrigo Cruz",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Growth Strategies",
+        "courseDescription": "Explore strategies for sustainable business growth and expansion in competitive markets.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/rodrigo_cruz.jpg"
+      },
+      {
+        "name": "Elena Martinez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Management for Small Businesses",
+        "courseDescription": "Learn essential financial management skills to effectively manage finances and drive profitability in your small business.",
         "ratings": 4,
         "price": 1000,
-        "image_url": "https://example.com/image37.jpg"
+        "imageUrl": "https://example.com/elena_martinez.jpg"
+      },
+      {
+        "name": "Ricardo Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Development",
+        "courseDescription": "Discover the key strategies and tactics to drive sustainable business growth and expansion.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/ricardo_fernandez.jpg"
+      },
+      {
+        "name": "Monica Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Entrepreneurship Essentials",
+        "courseDescription": "Learn how to launch and scale a successful digital business from scratch, even with limited resources.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/monica_lopez.jpg"
+      },
+      {
+        "name": "Gabriel Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Project Management for Entrepreneurs",
+        "courseDescription": "Master the fundamentals of project management to ensure the successful execution of your business initiatives.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/gabriel_ramirez.jpg"
+      },
+      {
+        "name": "Sofia Martinez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Literacy for Business Owners",
+        "courseDescription": "Acquire essential financial knowledge and skills to manage your business finances with confidence.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/sofia_martinez.jpg"
+      },
+      {
+        "name": "Diego Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Entrepreneurial Leadership",
+        "courseDescription": "Develop the leadership qualities necessary to inspire and lead your team towards business success.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/diego_hernandez.jpg"
       },
       {
         "name": "Luisa Gomez",
-        "business_online_course_title": "The Art of Negotiation for Entrepreneurs",
-        "course_description": "Enhance your negotiation skills to achieve favorable outcomes in business deals. Learn negotiation strategies, tactics, and techniques for maximizing value and building win-win relationships.",
-        "ratings": 5,
-        "price": 1200,
-        "image_url": "https://example.com/image38.jpg"
-      },
-      {
-        "name": "Rafael Hernandez",
-        "business_online_course_title": "Effective Risk Management for Entrepreneurs",
-        "course_description": "Learn how to identify, assess, and mitigate risks in your entrepreneurial venture. Explore risk management frameworks, techniques, and best practices to protect your business.",
-        "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image39.jpg"
-      },
-      {
-        "name": "Adriana Santos",
-        "business_online_course_title": "The Art of Strategic Leadership",
-        "course_description": "Develop the strategic leadership skills needed to drive success in your entrepreneurial endeavors. Learn how to formulate vision, inspire teams, and navigate complex business challenges.",
-        "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image40.jpg"
-      },
-      {
-        "name": "Marcelo Cruz",
-        "business_online_course_title": "The Ultimate Guide to Social Media Marketing",
-        "course_description": "Learn advanced strategies and tactics to leverage social media for business growth. Discover how to create engaging content, optimize ad campaigns, and measure ROI for social media marketing.",
-        "ratings": 4,
-        "price": 1100,
-        "image_url": "https://example.com/image41.jpg"
-      },
-      {
-        "name": "Rosa Gonzales",
-        "business_online_course_title": "Financial Planning for Entrepreneurs",
-        "course_description": "Gain practical insights into financial planning strategies tailored for entrepreneurs. Learn how to set financial goals, manage cash flow, and plan for long-term financial success.",
-        "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image42.jpg"
-      },
-      {
-        "name": "Felipe Santos",
-        "business_online_course_title": "The Art of Effective Decision Making",
-        "course_description": "Master the art of making effective decisions in business. Learn decision-making frameworks, analytical techniques, and strategies for evaluating alternatives.",
-        "ratings": 4,
-        "price": 950,
-        "image_url": "https://example.com/image43.jpg"
-      },
-      {
-        "name": "Isabella Hernandez",
-        "business_online_course_title": "Building a Strong Company Culture",
-        "course_description": "Discover how to create a positive and thriving company culture that fosters employee engagement and productivity. Learn strategies for building trust, communication, and teamwork.",
-        "ratings": 5,
-        "price": 1200,
-        "image_url": "https://example.com/image44.jpg"
-      },
-      {
-        "name": "Diego Martinez",
-        "business_online_course_title": "The Essentials of Entrepreneurial Leadership",
-        "course_description": "Develop essential leadership skills to lead and inspire teams in your entrepreneurial venture. Learn about leadership styles, motivation techniques, and effective team management.",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Market Research Strategies",
+        "courseDescription": "Learn how to conduct market research effectively to identify opportunities and make informed business decisions.",
         "ratings": 4,
         "price": 1000,
-        "image_url": "https://example.com/image45.jpg"
+        "imageUrl": "https://example.com/luisa_gomez.jpg"
       },
       {
-        "name": "Gabriela Hernandez",
-        "business_online_course_title": "Effective Time Management Strategies",
-        "course_description": "Learn practical time management strategies to increase productivity and achieve your entrepreneurial goals. Discover techniques for prioritization, delegation, and overcoming procrastination.",
+        "name": "Andres Cruz",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Innovative Business Strategies",
+        "courseDescription": "Explore innovative approaches to business strategy that will position your company for long-term success.",
         "ratings": 5,
-        "price": 1150,
-        "image_url": "https://example.com/image46.jpg"
+        "price": 1400,
+        "imageUrl": "https://example.com/andres_cruz.jpg"
       },
       {
-        "name": "Javier Cruz",
-        "business_online_course_title": "The Art of Public Speaking for Entrepreneurs",
-        "course_description": "Enhance your public speaking skills to effectively communicate your ideas and inspire audiences. Learn techniques for overcoming stage fright, structuring presentations, and engaging listeners.",
+        "name": "Carolina Rivera",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Essentials of Product Management",
+        "courseDescription": "Gain a comprehensive understanding of product management principles and best practices.",
         "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image47.jpg"
-      },
-      {
-        "name": "Alicia Santos",
-        "business_online_course_title": "Strategies for Building a Global Brand",
-        "course_description": "Discover strategies for expanding your brand presence globally and reaching new markets. Learn about international marketing, localization, and cultural adaptation.",
-        "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image48.jpg"
-      },
-      {
-        "name": "Fernanda Lopez",
-        "business_online_course_title": "The Power of Mindset in Entrepreneurship",
-        "course_description": "Cultivate a growth mindset to overcome challenges and achieve success in entrepreneurship. Learn how to embrace failure, stay resilient, and maintain a positive outlook.",
-        "ratings": 4,
-        "price": 975,
-        "image_url": "https://example.com/image49.jpg"
-      },
-      {
-        "name": "Carlos Gomez",
-        "business_online_course_title": "Effective Marketing Analytics",
-        "course_description": "Unlock the power of marketing analytics to measure and optimize your marketing efforts. Learn how to analyze data, track key metrics, and make data-driven marketing decisions.",
-        "ratings": 5,
-        "price": 1350,
-        "image_url": "https://example.com/image50.jpg"
-      },
-      {
-        "name": "Elena Cruz",
-        "business_online_course_title": "The Fundamentals of Project Management",
-        "course_description": "Gain a comprehensive understanding of project management fundamentals essential for entrepreneurs. Learn about project planning, scheduling, budgeting, and risk management.",
-        "ratings": 4,
-        "price": 975,
-        "image_url": "https://example.com/image51.jpg"
-      },
-      {
-        "name": "Raul Hernandez",
-        "business_online_course_title": "Effective Business Communication Skills",
-        "course_description": "Enhance your business communication skills to convey your message clearly and persuasively. Learn about verbal and written communication techniques, active listening, and professional etiquette.",
-        "ratings": 5,
-        "price": 1150,
-        "image_url": "https://example.com/image52.jpg"
-      },
-      {
-        "name": "Marina Santos",
-        "business_online_course_title": "The Art of Customer Retention",
-        "course_description": "Discover strategies for retaining customers and building long-term relationships. Learn about customer loyalty programs, personalized marketing, and proactive customer service.",
-        "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image53.jpg"
-      },
-      {
-        "name": "Hector Cruz",
-        "business_online_course_title": "Strategic Product Development",
-        "course_description": "Learn how to develop and launch successful products that meet market needs and drive business growth. Explore product lifecycle management, market research, and innovation.",
-        "ratings": 5,
         "price": 1300,
-        "image_url": "https://example.com/image54.jpg"
+        "imageUrl": "https://example.com/carolina_rivera.jpg"
       },
       {
-        "name": "Lucas Hernandez",
-        "business_online_course_title": "The Art of Customer Feedback Management",
-        "course_description": "Discover strategies for collecting, analyzing, and acting on customer feedback to improve your products and services. Learn about feedback channels, survey design, and sentiment analysis.",
-        "ratings": 4,
-        "price": 975,
-        "image_url": "https://example.com/image55.jpg"
-      },
-      {
-        "name": "Rita Garcia",
-        "business_online_course_title": "Building a Sustainable Business Model",
-        "course_description": "Explore sustainable business models that create long-term value for both the company and society. Learn about triple bottom line, circular economy, and social entrepreneurship.",
+        "name": "Fernando Rodriguez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Analytics",
+        "courseDescription": "Harness the power of data analytics to drive strategic decision-making and optimize business performance.",
         "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/fernando_rodriguez.jpg"
+      },
+      {
+        "name": "Isabella Perez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Building a Successful Online Brand",
+        "courseDescription": "Learn how to build and grow a powerful online brand that resonates with your target audience.",
+        "ratings": 4,
         "price": 1200,
-        "image_url": "https://example.com/image56.jpg"
-      },
-      {
-        "name": "Pablo Dela Cruz",
-        "business_online_course_title": "The Art of Delegation for Entrepreneurs",
-        "course_description": "Master the art of delegation to empower your team and focus on high-impact tasks. Learn how to delegate effectively, set clear expectations, and provide feedback.",
-        "ratings": 4,
-        "price": 1000,
-        "image_url": "https://example.com/image57.jpg"
-      },
-      {
-        "name": "Lourdes Martinez",
-        "business_online_course_title": "Strategies for Building a Resilient Business",
-        "course_description": "Discover strategies for building resilience in your business to weather challenges and thrive in uncertain times. Learn about risk management, contingency planning, and adaptability.",
-        "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image58.jpg"
-      },
-      {
-        "name": "Enrique Gomez",
-        "business_online_course_title": "The Power of Networking in Entrepreneurship",
-        "course_description": "Learn how to leverage networking to create opportunities and grow your entrepreneurial venture. Discover networking strategies, relationship-building techniques, and tips for effective networking events.",
-        "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image59.jpg"
-      },
-      {
-        "name": "Antonia Hernandez",
-        "business_online_course_title": "The Essentials of Business Strategy",
-        "course_description": "Gain a deep understanding of business strategy fundamentals essential for entrepreneurial success. Learn about strategic analysis, competitive advantage, and strategic planning frameworks.",
-        "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image60.jpg"
-      },
-      {
-        "name": "Isidro Cruz",
-        "business_online_course_title": "Effective Business Negotiation Strategies",
-        "course_description": "Master the art of negotiation to achieve favorable outcomes in business deals. Learn negotiation tactics, strategies, and techniques to build mutually beneficial agreements.",
-        "ratings": 4,
-        "price": 1100,
-        "image_url": "https://example.com/image61.jpg"
-      },
-      {
-        "name": "Amelia Hernandez",
-        "business_online_course_title": "The Essentials of Business Ethics",
-        "course_description": "Gain a deep understanding of business ethics principles and practices essential for entrepreneurial success. Learn about ethical decision-making, corporate social responsibility, and ethical leadership.",
-        "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image62.jpg"
-      },
-      {
-        "name": "Diego Garcia",
-        "business_online_course_title": "The Power of Emotional Intelligence in Entrepreneurship",
-        "course_description": "Develop your emotional intelligence to navigate the challenges of entrepreneurship with resilience and adaptability. Learn how to manage stress, build relationships, and make sound decisions under pressure.",
-        "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image63.jpg"
-      },
-      {
-        "name": "Sofia Cruz",
-        "business_online_course_title": "Building a Strong Personal Brand",
-        "course_description": "Learn how to build a compelling personal brand that reflects your values, expertise, and unique identity. Discover strategies for branding, content creation, and online presence.",
-        "ratings": 5,
-        "price": 1200,
-        "image_url": "https://example.com/image64.jpg"
-      },
-      {
-        "name": "Manuel Garcia",
-        "business_online_course_title": "The Fundamentals of Market Research",
-        "course_description": "Gain essential skills in market research to understand customer needs, identify opportunities, and make informed business decisions. Learn about research methods, data analysis, and interpretation.",
-        "ratings": 4,
-        "price": 1000,
-        "image_url": "https://example.com/image65.jpg"
-      },
-      {
-        "name": "Ana Dela Cruz",
-        "business_online_course_title": "Strategic Leadership in Times of Crisis",
-        "course_description": "Develop strategic leadership skills to navigate and lead your business through times of crisis and uncertainty. Learn crisis management strategies, communication techniques, and decision-making under pressure.",
-        "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image66.jpg"
-      },
-      {
-        "name": "Francisca Hernandez",
-        "business_online_course_title": "The Art of Influencing and Persuasion",
-        "course_description": "Master the art of influencing and persuasion to effectively communicate your ideas and drive action in business settings. Learn persuasion techniques, communication strategies, and psychological principles.",
-        "ratings": 4,
-        "price": 1100,
-        "image_url": "https://example.com/image67.jpg"
+        "imageUrl": "https://example.com/isabella_perez.jpg"
       },
       {
         "name": "Antonio Garcia",
-        "business_online_course_title": "Effective Supply Chain Management for Entrepreneurs",
-        "course_description": "Learn how to optimize your supply chain to improve efficiency, reduce costs, and enhance customer satisfaction. Discover supply chain strategies, logistics management, and inventory control techniques.",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Negotiation",
+        "courseDescription": "Master the art of negotiation to achieve favorable outcomes in business deals and partnerships.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image68.jpg"
+        "price": 1400,
+        "imageUrl": "https://example.com/antonio_garcia.jpg"
       },
       {
-        "name": "Luz Dela Cruz",
-        "business_online_course_title": "The Art of Innovation in Business",
-        "course_description": "Unlock the power of innovation to drive growth and success in your entrepreneurial ventures. Learn how to foster a culture of innovation, generate new ideas, and implement innovative solutions.",
+        "name": "Camila Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Finance",
+        "courseDescription": "Learn the financial management skills necessary to effectively manage finances and drive business growth.",
         "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image69.jpg"
+        "price": 1100,
+        "imageUrl": "https://example.com/camila_hernandez.jpg"
       },
       {
-        "name": "Felipe Hernandez",
-        "business_online_course_title": "Financial Management for Small Businesses",
-        "course_description": "Gain practical insights into financial management strategies tailored for small businesses. Learn about budgeting, cash flow management, and financial decision-making.",
+        "name": "Alejandro Torres",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Marketing Planning",
+        "courseDescription": "Develop a comprehensive marketing plan that aligns with your business goals and drives results.",
         "ratings": 5,
-        "price": 1200,
-        "image_url": "https://example.com/image70.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/alejandro_torres.jpg"
       },
       {
-        "name": "Maria Dela Cruz",
-        "business_online_course_title": "Digital Marketing Fundamentals",
-        "course_description": "Discover the fundamentals of digital marketing to promote your business online effectively. Learn about SEO, social media marketing, email marketing, and online advertising.",
+        "name": "Valeria Ruiz",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Business Leadership",
+        "courseDescription": "Enhance your leadership skills to inspire and motivate your team towards achieving business success.",
         "ratings": 4,
         "price": 1000,
-        "image_url": "https://example.com/image71.jpg"
+        "imageUrl": "https://example.com/valeria_ruiz.jpg"
       },
       {
-        "name": "Ricardo Gomez",
-        "business_online_course_title": "The Essentials of Entrepreneurship",
-        "course_description": "Gain a comprehensive understanding of entrepreneurship fundamentals essential for starting and growing your business. Learn about idea generation, business planning, and startup financing.",
+        "name": "Felipe Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Planning for Entrepreneurs",
+        "courseDescription": "Learn how to create a comprehensive financial plan to support the growth and sustainability of your business.",
         "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/felipe_gomez.jpg"
+      },
+      {
+        "name": "Gabriela Diaz",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Social Media Strategy for Business",
+        "courseDescription": "Develop a winning social media strategy to effectively engage your audience and drive business growth.",
+        "ratings": 4,
         "price": 1300,
-        "image_url": "https://example.com/image72.jpg"
+        "imageUrl": "https://example.com/gabriela_diaz.jpg"
       },
       {
-        "name": "Elena Hernandez",
-        "business_online_course_title": "Effective Project Management for Entrepreneurs",
-        "course_description": "Learn essential project management skills to successfully plan, execute, and deliver projects in your entrepreneurial ventures. Discover project planning, scheduling, and risk management techniques.",
-        "ratings": 4,
-        "price": 1100,
-        "image_url": "https://example.com/image73.jpg"
-      },
-      {
-        "name": "Carlos Dela Cruz",
-        "business_online_course_title": "Strategic Business Planning",
-        "course_description": "Develop a strategic business plan to guide your entrepreneurial venture towards success. Learn about goal setting, market analysis, and strategic decision-making.",
+        "name": "Hector Sanchez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Innovative Business Development",
+        "courseDescription": "Explore innovative approaches to business development that drive sustainable growth and success.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image74.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/hector_sanchez.jpg"
       },
       {
-        "name": "Luis Hernandez",
-        "business_online_course_title": "The Art of Leadership",
-        "course_description": "Master the art of leadership to inspire and motivate teams in your entrepreneurial journey. Learn about leadership styles, communication techniques, and team-building strategies.",
+        "name": "Adriana Castro",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Essentials of Supply Chain Management",
+        "courseDescription": "Gain a comprehensive understanding of supply chain management principles and best practices.",
         "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image75.jpg"
-      },
-      {
-        "name": "Victoria Cruz",
-        "business_online_course_title": "Effective Business Communication",
-        "course_description": "Enhance your business communication skills to convey your message clearly and persuasively. Learn about verbal and written communication, active listening, and professional etiquette.",
-        "ratings": 5,
         "price": 1200,
-        "image_url": "https://example.com/image76.jpg"
+        "imageUrl": "https://example.com/adriana_castro.jpg"
       },
       {
-        "name": "Jorge Garcia",
-        "business_online_course_title": "The Science of Decision Making",
-        "course_description": "Explore the science behind decision making and learn how to make better decisions in business. Discover decision-making biases, cognitive processes, and strategies for improving decision quality.",
-        "ratings": 4,
-        "price": 1000,
-        "image_url": "https://example.com/image77.jpg"
-      },
-      {
-        "name": "Isabel Hernandez",
-        "business_online_course_title": "Strategies for Business Growth",
-        "course_description": "Discover strategies and tactics for driving business growth and expansion. Learn about market penetration, product development, and diversification strategies.",
+        "name": "Raul Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Communication",
+        "courseDescription": "Enhance your communication skills to effectively convey your message and build strong business relationships.",
         "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image78.jpg"
+        "price": 1400,
+        "imageUrl": "https://example.com/raul_ramirez.jpg"
       },
       {
-        "name": "Mateo Gomez",
-        "business_online_course_title": "The Power of Networking",
-        "course_description": "Learn how to leverage the power of networking to create opportunities and grow your business. Discover networking strategies, relationship-building techniques, and effective networking etiquette.",
+        "name": "Laura Perez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Strategy Fundamentals",
+        "courseDescription": "Learn the fundamentals of business strategy and how to develop a winning strategy for your business.",
         "ratings": 4,
         "price": 1100,
-        "image_url": "https://example.com/image79.jpg"
+        "imageUrl": "https://example.com/laura_perez.jpg"
       },
       {
-        "name": "Julia Dela Cruz",
-        "business_online_course_title": "Financial Literacy for Entrepreneurs",
-        "course_description": "Gain essential financial literacy skills to manage your business finances effectively. Learn about budgeting, financial statements, and investment strategies.",
+        "name": "Julio Martinez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Planning",
+        "courseDescription": "Learn the essentials of business planning and how to develop a solid roadmap for your business success.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image80.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/julio_martinez.jpg"
       },
       {
-        "name": "Alejandra Hernandez",
-        "business_online_course_title": "The Art of Strategic Planning",
-        "course_description": "Master the art of strategic planning to set clear goals and direction for your entrepreneurial venture. Learn about environmental analysis, goal setting, and implementation strategies.",
+        "name": "Ana Maria Cruz",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurship 101",
+        "courseDescription": "Discover the fundamentals of entrepreneurship and how to start and grow your own business.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/ana_maria_cruz.jpg"
+      },
+      {
+        "name": "Pedro Alvarez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Sales Techniques",
+        "courseDescription": "Master the art of selling and learn proven techniques to close more deals and increase revenue.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/pedro_alvarez.jpg"
+      },
+      {
+        "name": "Sofia Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Marketing Fundamentals",
+        "courseDescription": "Learn the basics of digital marketing and how to leverage online channels to grow your business.",
         "ratings": 4,
         "price": 1100,
-        "image_url": "https://example.com/image81.jpg"
+        "imageUrl": "https://example.com/sofia_fernandez.jpg"
       },
       {
         "name": "Javier Gomez",
-        "business_online_course_title": "Building a High-Performance Team",
-        "course_description": "Learn how to build and lead high-performing teams in your entrepreneurial venture. Discover team dynamics, communication strategies, and performance management techniques.",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Leadership",
+        "courseDescription": "Develop the strategic leadership skills necessary to drive organizational change and achieve business goals.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image82.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/javier_gomez.jpg"
       },
       {
-        "name": "Camila Dela Cruz",
-        "business_online_course_title": "The Essentials of Digital Entrepreneurship",
-        "course_description": "Gain a comprehensive understanding of digital entrepreneurship and learn how to start and grow an online business. Explore e-commerce, digital marketing, and online monetization strategies.",
+        "name": "Luisa Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Management Essentials",
+        "courseDescription": "Learn the fundamentals of financial management to effectively manage your business finances and maximize profitability.",
         "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image83.jpg"
-      },
-      {
-        "name": "Gonzalo Garcia",
-        "business_online_course_title": "Effective Leadership Communication",
-        "course_description": "Enhance your leadership communication skills to inspire and motivate teams in your entrepreneurial journey. Learn about effective messaging, storytelling, and communication strategies.",
-        "ratings": 5,
         "price": 1200,
-        "image_url": "https://example.com/image84.jpg"
+        "imageUrl": "https://example.com/luisa_hernandez.jpg"
       },
       {
-        "name": "Martina Hernandez",
-        "business_online_course_title": "The Art of Digital Marketing Strategy",
-        "course_description": "Develop a comprehensive digital marketing strategy to reach and engage your target audience effectively. Learn about content marketing, social media strategy, and performance measurement.",
-        "ratings": 4,
-        "price": 1000,
-        "image_url": "https://example.com/image85.jpg"
-      },
-      {
-        "name": "Diego Dela Cruz",
-        "business_online_course_title": "Financial Management for Entrepreneurs",
-        "course_description": "Gain practical insights into financial management strategies tailored for entrepreneurs. Learn about budgeting, cash flow management, and financial decision-making.",
+        "name": "Miguel Rodriguez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Strategy",
+        "courseDescription": "Develop a winning business strategy that aligns with your goals and drives sustainable growth.",
         "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image86.jpg"
+        "price": 1400,
+        "imageUrl": "https://example.com/miguel_rodriguez.jpg"
       },
       {
-        "name": "Sara Gomez",
-        "business_online_course_title": "The Art of Productivity",
-        "course_description": "Unlock the secrets to maximizing productivity and achieving your entrepreneurial goals. Learn time management techniques, prioritization strategies, and productivity tools.",
+        "name": "Maria Garcia",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Essentials of Entrepreneurial Finance",
+        "courseDescription": "Gain a practical understanding of entrepreneurial finance and how to manage finances for business success.",
         "ratings": 4,
         "price": 1100,
-        "image_url": "https://example.com/image87.jpg"
+        "imageUrl": "https://example.com/maria_garcia.jpg"
       },
       {
-        "name": "Hugo Hernandez",
-        "business_online_course_title": "Strategic Brand Management",
-        "course_description": "Discover strategies for building and managing a strong brand that resonates with your target audience. Learn about brand positioning, brand identity, and brand equity.",
+        "name": "Carlos Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Marketing Essentials",
+        "courseDescription": "Learn the fundamentals of strategic marketing and how to develop a marketing plan that drives results.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image88.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/carlos_ramirez.jpg"
       },
       {
-        "name": "Daniela Dela Cruz",
-        "business_online_course_title": "The Art of Customer Experience Management",
-        "course_description": "Learn how to create memorable and meaningful customer experiences to drive loyalty and advocacy. Explore customer journey mapping, service design, and customer feedback management.",
+        "name": "Elena Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Social Media Marketing Fundamentals",
+        "courseDescription": "Discover the basics of social media marketing and how to use popular platforms to grow your business.",
         "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image89.jpg"
-      },
-      {
-        "name": "Pedro Gomez",
-        "business_online_course_title": "Effective Project Management for Small Businesses",
-        "course_description": "Learn essential project management skills tailored for small businesses to successfully plan, execute, and deliver projects. Discover project planning, scheduling, and resource allocation.",
-        "ratings": 5,
         "price": 1200,
-        "image_url": "https://example.com/image90.jpg"
+        "imageUrl": "https://example.com/elena_fernandez.jpg"
       },
       {
-        "name": "Carla Hernandez",
-        "business_online_course_title": "The Essentials of Entrepreneurial Finance",
-        "course_description": "Gain a solid understanding of entrepreneurial finance to effectively manage finances and drive business growth. Learn about financial statements, cash flow management, and funding options.",
-        "ratings": 4,
-        "price": 1000,
-        "image_url": "https://example.com/image91.jpg"
-      },
-      {
-        "name": "Arturo Gomez",
-        "business_online_course_title": "The Power of Social Entrepreneurship",
-        "course_description": "Discover how to create positive social impact while building a successful business. Learn about social entrepreneurship models, impact measurement, and sustainable business practices.",
+        "name": "Diego Martinez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Communication Skills",
+        "courseDescription": "Enhance your communication skills to effectively convey your message and build strong business relationships.",
         "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image92.jpg"
+        "price": 1400,
+        "imageUrl": "https://example.com/diego_martinez.jpg"
       },
       {
-        "name": "Valeria Dela Cruz",
-        "business_online_course_title": "The Art of Strategic Innovation",
-        "course_description": "Explore strategies and techniques for fostering innovation and driving business growth. Learn how to cultivate a culture of innovation, generate ideas, and implement innovative solutions.",
+        "name": "Isabella Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Strategy Development",
+        "courseDescription": "Learn how to develop a strategic plan that guides your business towards achieving its long-term objectives.",
         "ratings": 4,
         "price": 1100,
-        "image_url": "https://example.com/image93.jpg"
+        "imageUrl": "https://example.com/isabella_hernandez.jpg"
       },
       {
-        "name": "Ramon Hernandez",
-        "business_online_course_title": "The Essentials of Business Development",
-        "course_description": "Gain a comprehensive understanding of business development fundamentals essential for entrepreneurial success. Learn about market analysis, strategic partnerships, and growth strategies.",
+        "name": "Antonio Lopez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Leadership Strategies",
+        "courseDescription": "Master the essential leadership strategies to inspire and motivate your team towards achieving business success.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image94.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/antonio_lopez.jpg"
       },
       {
-        "name": "Carmen Gomez",
-        "business_online_course_title": "The Art of Digital Transformation",
-        "course_description": "Learn how to leverage digital technologies to transform your business and stay competitive in the digital age. Explore digital transformation strategies, implementation challenges, and success factors.",
+        "name": "Camila Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Marketing",
+        "courseDescription": "Learn how to develop and implement marketing strategies that drive customer engagement and business growth.",
         "ratings": 4,
-        "price": 1050,
-        "image_url": "https://example.com/image95.jpg"
-      },
-      {
-        "name": "Francisco Dela Cruz",
-        "business_online_course_title": "Effective Sales Strategies for Entrepreneurs",
-        "course_description": "Discover proven sales strategies and techniques to drive revenue and growth in your entrepreneurial venture. Learn about prospecting, lead generation, and closing techniques.",
-        "ratings": 5,
         "price": 1200,
-        "image_url": "https://example.com/image96.jpg"
+        "imageUrl": "https://example.com/camila_gomez.jpg"
       },
       {
-        "name": "Laura Hernandez",
-        "business_online_course_title": "The Art of Strategic Marketing",
-        "course_description": "Develop a strategic marketing plan to reach and engage your target audience effectively. Learn about market segmentation, positioning, and marketing mix strategies.",
+        "name": "Francisco Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Management for Entrepreneurs",
+        "courseDescription": "Learn how to manage your business finances effectively to drive profitability and long-term success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/francisco_fernandez.jpg"
+      },
+      {
+        "name": "Valentina Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Business Strategy",
+        "courseDescription": "Discover how to develop a digital business strategy that leverages technology to achieve business objectives.",
         "ratings": 4,
-        "price": 1000,
-        "image_url": "https://example.com/image97.jpg"
+        "price": 1100,
+        "imageUrl": "https://example.com/valentina_ramirez.jpg"
+      },
+      {
+        "name": "Roberto Martinez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Development",
+        "courseDescription": "Learn the strategies and tactics to drive business growth and expansion in competitive markets.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/roberto_martinez.jpg"
+      },
+      {
+        "name": "Catalina Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Leadership",
+        "courseDescription": "Develop the leadership skills necessary to lead and inspire a team towards achieving business goals.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/catalina_hernandez.jpg"
+      },
+      {
+        "name": "Manuel Rodriguez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Planning",
+        "courseDescription": "Learn how to develop a comprehensive business plan that guides your business towards success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/manuel_rodriguez.jpg"
+      },
+      {
+        "name": "Gabriela Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Branding Strategies",
+        "courseDescription": "Discover how to develop and implement branding strategies that differentiate your business and attract customers.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/gabriela_fernandez.jpg"
+      },
+      {
+        "name": "Josefina Garcia",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Time Management",
+        "courseDescription": "Master time management techniques to boost productivity and achieve work-life balance.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/josefina_garcia.jpg"
+      },
+      {
+        "name": "Rafael Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Startup Essentials",
+        "courseDescription": "Learn the essential steps to launch and grow a successful startup from scratch.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/rafael_fernandez.jpg"
+      },
+      {
+        "name": "Alejandra Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Networking",
+        "courseDescription": "Unlock the power of networking to build valuable connections and opportunities for your business.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/alejandra_ramirez.jpg"
+      },
+      {
+        "name": "Diego Garcia",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Business Transformation",
+        "courseDescription": "Learn how to leverage digital technologies to transform your business and stay competitive in the digital age.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/diego_garcia.jpg"
+      },
+      {
+        "name": "Valentina Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Leadership",
+        "courseDescription": "Develop the leadership skills necessary to drive organizational change and achieve business success.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/valentina_fernandez.jpg"
+      },
+      {
+        "name": "Andres Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Customer Relationship Management",
+        "courseDescription": "Learn how to build and maintain strong relationships with customers to drive loyalty and retention.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/andres_ramirez.jpg"
+      },
+      {
+        "name": "Camila Gonzalez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Marketing Strategies",
+        "courseDescription": "Discover powerful marketing strategies to attract, engage, and convert customers for your business.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/camila_gonzalez.jpg"
+      },
+      {
+        "name": "Javier Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Analytics Fundamentals",
+        "courseDescription": "Learn the basics of business analytics and how to leverage data for strategic decision-making.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/javier_lopez.jpg"
+      },
+      {
+        "name": "Isabela Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Management for Small Businesses",
+        "courseDescription": "Learn essential financial management skills to effectively manage finances and drive profitability in your small business.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/isabela_gomez.jpg"
+      },
+      {
+        "name": "Roberto Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Ethics and Corporate Responsibility",
+        "courseDescription": "Explore the importance of ethical behavior and corporate responsibility in business decision-making.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/roberto_hernandez.jpg"
+      },
+      {
+        "name": "Luisa Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Sales Strategies",
+        "courseDescription": "Learn proven sales techniques and strategies to close more deals and drive revenue for your business.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/luisa_ramirez.jpg"
+      },
+      {
+        "name": "Diego Martinez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Business Development",
+        "courseDescription": "Discover key strategies and tactics for driving sustainable business growth and expansion.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/diego_martinez.jpg"
+      },
+      {
+        "name": "Elena Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Branding Strategies",
+        "courseDescription": "Learn how to develop a strong brand identity and positioning strategy to differentiate your business.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/elena_fernandez.jpg"
+      },
+      {
+        "name": "Antonio Rodriguez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Marketing Strategy",
+        "courseDescription": "Develop a comprehensive digital marketing strategy to reach and engage your target audience effectively.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/antonio_rodriguez.jpg"
+      },
+      {
+        "name": "Maria Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Entrepreneurial Leadership",
+        "courseDescription": "Develop the leadership qualities necessary to inspire and lead a team towards business success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/maria_gomez.jpg"
+      },
+      {
+        "name": "Juan Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Planning for Entrepreneurs",
+        "courseDescription": "Learn how to create a comprehensive financial plan to support the growth and sustainability of your business.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/juan_hernandez.jpg"
+      },
+      {
+        "name": "Sofia Rodriguez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Communication",
+        "courseDescription": "Enhance your communication skills to convey your message clearly and build strong business relationships.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/sofia_rodriguez.jpg"
+      },
+      {
+        "name": "Carlos Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Strategy Execution",
+        "courseDescription": "Learn how to effectively execute your business strategy and achieve your desired outcomes.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/carlos_gomez.jpg"
+      },
+      {
+        "name": "Luis Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Project Management",
+        "courseDescription": "Master the principles and best practices of project management to ensure successful project delivery.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/luis_fernandez.jpg"
+      },
+      {
+        "name": "Ana Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Social Media Marketing Strategy",
+        "courseDescription": "Develop a strategic approach to social media marketing to effectively engage your audience and drive business results.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/ana_ramirez.jpg"
+      },
+      {
+        "name": "Gabriel Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Leadership Development",
+        "courseDescription": "Develop essential leadership skills to inspire and empower your team towards achieving organizational goals.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/gabriel_fernandez.jpg"
+      },
+      {
+        "name": "Valeria Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Entrepreneurship Masterclass",
+        "courseDescription": "Gain insights into the world of digital entrepreneurship and learn how to build a successful online business.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/valeria_ramirez.jpg"
+      },
+      {
+        "name": "Fernando Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Planning",
+        "courseDescription": "Learn how to create a comprehensive business plan that sets clear objectives and strategies for your business.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/fernando_gomez.jpg"
+      },
+      {
+        "name": "Sofia Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Management for Entrepreneurs",
+        "courseDescription": "Master the principles of financial management to effectively manage resources and drive business growth.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/sofia_hernandez.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Strategy",
+        "courseDescription": "Develop a strategic mindset and learn how to formulate and execute winning business strategies.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Isabella Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Marketing Fundamentals",
+        "courseDescription": "Gain a foundational understanding of marketing principles and learn how to develop effective marketing strategies.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/isabella_lopez.jpg"
+      },
+      {
+        "name": "Alejandro Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Advanced Sales Techniques",
+        "courseDescription": "Take your sales skills to the next level with advanced techniques and strategies for closing deals.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/alejandro_ramirez.jpg"
+      },
+      {
+        "name": "Lucia Martinez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "E-commerce Essentials",
+        "courseDescription": "Learn the fundamentals of e-commerce and how to build and grow a successful online store.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/lucia_martinez.jpg"
+      },
+      {
+        "name": "Carlos Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Communication",
+        "courseDescription": "Master communication skills to convey your message clearly and build strong business relationships.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/carlos_fernandez.jpg"
+      },
+      {
+        "name": "Camila Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Business Development",
+        "courseDescription": "Explore strategies for driving business growth and expansion in competitive markets.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/camila_ramirez.jpg"
+      },
+      {
+        "name": "Jorge Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Entrepreneurial Finance",
+        "courseDescription": "Learn financial management skills to effectively manage finances and drive profitability in your business.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/jorge_gomez.jpg"
+      },
+      {
+        "name": "Maria Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Marketing Strategy",
+        "courseDescription": "Develop a comprehensive digital marketing strategy to reach and engage your target audience effectively.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/maria_ramirez.jpg"
+      },
+      {
+        "name": "Daniel Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Leadership",
+        "courseDescription": "Develop leadership qualities to inspire and lead a team towards achieving business goals.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/daniel_fernandez.jpg"
+      },
+      {
+        "name": "Valentina Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Startup Growth Strategies",
+        "courseDescription": "Learn strategies and tactics to accelerate growth and scale your startup to the next level.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/valentina_gomez.jpg"
+      },
+      {
+        "name": "Pedro Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Marketing Planning",
+        "courseDescription": "Develop a strategic marketing plan to effectively reach and engage your target audience.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/pedro_ramirez.jpg"
+      },
+      {
+        "name": "Ana Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Planning Essentials",
+        "courseDescription": "Learn the fundamentals of financial planning to achieve financial stability and success.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/ana_fernandez.jpg"
       },
       {
         "name": "Diego Gomez",
-        "business_online_course_title": "Building a Culture of Innovation",
-        "course_description": "Learn how to foster a culture of innovation that drives creativity, growth, and success in your entrepreneurial venture. Discover innovation frameworks, idea generation techniques, and implementation strategies.",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Negotiation Skills",
+        "courseDescription": "Master negotiation techniques to achieve win-win outcomes in business deals and partnerships.",
         "ratings": 5,
-        "price": 1300,
-        "image_url": "https://example.com/image98.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/diego_gomez.jpg"
       },
       {
-        "name": "Ana Hernandez",
-        "business_online_course_title": "The Essentials of Strategic Management",
-        "course_description": "Gain a deep understanding of strategic management principles and practices essential for entrepreneurial success. Learn about strategic analysis, formulation, and implementation.",
+        "name": "Gabriela Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "E-commerce Strategy",
+        "courseDescription": "Develop an effective e-commerce strategy to attract customers and drive sales in the online marketplace.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/gabriela_ramirez.jpg"
+      },
+      {
+        "name": "Javier Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Analytics",
+        "courseDescription": "Leverage data analytics to gain valuable insights and make informed decisions for business growth.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/javier_fernandez.jpg"
+      },
+      {
+        "name": "Maria Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Mindset",
+        "courseDescription": "Cultivate an entrepreneurial mindset to identify opportunities and overcome challenges in business.",
         "ratings": 4,
         "price": 1100,
-        "image_url": "https://example.com/image99.jpg"
+        "imageUrl": "https://example.com/maria_fernandez.jpg"
       },
       {
-        "name": "Manuel Dela Cruz",
-        "business_online_course_title": "The Art of Entrepreneurial Leadership",
-        "course_description": "Master the art of entrepreneurial leadership to inspire and motivate teams in your entrepreneurial journey. Learn about leadership styles, decision-making, and team empowerment.",
+        "name": "Ricardo Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Team Management",
+        "courseDescription": "Learn how to build and lead high-performing teams to achieve organizational goals.",
         "ratings": 5,
-        "price": 1250,
-        "image_url": "https://example.com/image100.jpg"
+        "price": 1500,
+        "imageUrl": "https://example.com/ricardo_hernandez.jpg"
+      },
+      {
+        "name": "Laura Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Marketing Essentials",
+        "courseDescription": "Gain a comprehensive understanding of digital marketing concepts and strategies for business success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/laura_gomez.jpg"
+      },
+      {
+        "name": "Juan Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Development",
+        "courseDescription": "Explore strategies and tactics for driving business growth and expansion in dynamic markets.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/juan_ramirez.jpg"
+      },
+      {
+        "name": "Sara Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Leadership",
+        "courseDescription": "Develop the leadership skills necessary to inspire and lead a team towards business success.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/sara_fernandez.jpg"
+      },
+      {
+        "name": "Carlos Gonzalez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Strategy",
+        "courseDescription": "Learn how to develop a strategic plan that aligns with your business goals and drives growth.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/carlos_gonzalez.jpg"
+      },
+      {
+        "name": "Valeria Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Management Fundamentals",
+        "courseDescription": "Gain a solid understanding of financial management principles and practices for business success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/valeria_fernandez.jpg"
+      },
+      {
+        "name": "Diego Lopez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Sales Strategies",
+        "courseDescription": "Discover proven sales techniques and strategies to drive revenue and achieve sales targets.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/diego_lopez.jpg"
+      },
+      {
+        "name": "Ana Gonzalez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Innovation",
+        "courseDescription": "Learn how to foster a culture of innovation and drive business growth through creative thinking.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/ana_gonzalez.jpg"
+      },
+      {
+        "name": "Manuel Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Marketing Strategies",
+        "courseDescription": "Discover powerful marketing strategies to attract and retain customers and drive business growth.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/manuel_fernandez.jpg"
+      },
+      {
+        "name": "Luisa Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "E-commerce Strategy",
+        "courseDescription": "Develop a comprehensive e-commerce strategy to optimize online sales and maximize profitability.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/luisa_gomez.jpg"
+      },
+      {
+        "name": "Jorge Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Planning for Entrepreneurs",
+        "courseDescription": "Learn how to create a financial plan that supports the growth and sustainability of your entrepreneurial venture.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/jorge_ramirez.jpg"
+      },
+      {
+        "name": "Elena Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Social Media Marketing Strategies",
+        "courseDescription": "Discover effective social media marketing strategies to build brand awareness and engage your audience.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/elena_gomez.jpg"
+      },
+      {
+        "name": "Francisco Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Communication",
+        "courseDescription": "Enhance your communication skills to convey your message clearly and build strong business relationships.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/francisco_ramirez.jpg"
+      },
+      {
+        "name": "Maria Gonzalez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Finance",
+        "courseDescription": "Gain practical knowledge of financial management for entrepreneurs to drive business success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/maria_gonzalez.jpg"
+      },
+      {
+        "name": "Alejandro Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Leadership",
+        "courseDescription": "Develop the leadership skills necessary to drive organizational change and achieve business goals.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/alejandro_fernandez.jpg"
+      },
+      {
+        "name": "Valentina Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Business Transformation",
+        "courseDescription": "Learn how to leverage digital technologies to transform your business and stay competitive in the digital age.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/valentina_gomez.jpg"
+      },
+      {
+        "name": "Andres Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Project Management",
+        "courseDescription": "Master project management principles and practices to ensure successful project delivery.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/andres_ramirez.jpg"
+      },
+      {
+        "name": "Camila Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Marketing Analytics",
+        "courseDescription": "Learn how to analyze marketing data to optimize campaigns and drive better business outcomes.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/camila_fernandez.jpg"
+      },
+      {
+        "name": "Diego Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Negotiation Skills",
+        "courseDescription": "Master negotiation techniques to achieve mutually beneficial outcomes and drive business success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/diego_hernandez.jpg"
+      },
+      {
+        "name": "Maria Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Strategy Execution",
+        "courseDescription": "Learn how to effectively execute your business strategy and achieve your desired outcomes.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/maria_ramirez.jpg"
+      },
+      {
+        "name": "Javier Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Leadership",
+        "courseDescription": "Develop leadership qualities to inspire and lead a team towards achieving business goals.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/javier_gomez.jpg"
+      },
+      {
+        "name": "Sofia Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Marketing Planning",
+        "courseDescription": "Learn how to create a strategic marketing plan that drives business growth and success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/sofia_ramirez.jpg"
+      },
+      {
+        "name": "Daniel Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Management for Entrepreneurs",
+        "courseDescription": "Master financial management principles and practices to effectively manage resources and drive business growth.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/daniel_hernandez.jpg"
+      },
+      {
+        "name": "Valeria Gonzalez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "E-commerce Strategy",
+        "courseDescription": "Develop an effective e-commerce strategy to maximize online sales and grow your business.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/valeria_gonzalez.jpg"
+      },
+      {
+        "name": "Alejandro Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Strategy",
+        "courseDescription": "Learn how to formulate and implement a strategic plan that drives business success and growth.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/alejandro_gomez.jpg"
+      },
+      {
+        "name": "Lucia Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Finance",
+        "courseDescription": "Gain essential financial management skills for entrepreneurs to manage finances effectively and drive profitability.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/lucia_ramirez.jpg"
+      },
+      {
+        "name": "Carlos Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Digital Marketing Strategy",
+        "courseDescription": "Develop a comprehensive digital marketing strategy to reach and engage your target audience effectively.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/carlos_hernandez.jpg"
+      },
+      {
+        "name": "Ana Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Innovation",
+        "courseDescription": "Explore innovative approaches to business and learn how to drive growth through creativity and adaptation.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/ana_gomez.jpg"
+      },
+      {
+        "name": "Manuel Gonzalez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Project Management",
+        "courseDescription": "Master project management principles and practices to ensure successful project delivery on time and within budget.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/manuel_gonzalez.jpg"
+      },
+      {
+        "name": "Camila Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Marketing Analytics",
+        "courseDescription": "Learn how to analyze marketing data to optimize campaigns and drive better business outcomes.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/camila_ramirez.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Negotiation Skills",
+        "courseDescription": "Master negotiation techniques to achieve win-win outcomes and build successful business relationships.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Maria Gonzalez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Strategy Execution",
+        "courseDescription": "Learn how to effectively execute your business strategy and achieve your desired outcomes.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/maria_gonzalez.jpg"
+      },
+      {
+        "name": "Francisco Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Communication",
+        "courseDescription": "Enhance your communication skills to convey your message clearly and build strong business relationships.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/francisco_ramirez.jpg"
+      },
+      {
+        "name": "Elena Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Finance",
+        "courseDescription": "Gain practical knowledge of financial management for entrepreneurs to drive business success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/elena_gomez.jpg"
+      },
+      {
+        "name": "Alejandro Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Leadership",
+        "courseDescription": "Develop the leadership skills necessary to drive organizational change and achieve business goals.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/alejandro_fernandez.jpg"
+      },
+      {
+        "name": "Valentina Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Business Transformation",
+        "courseDescription": "Learn how to leverage digital technologies to transform your business and stay competitive in the digital age.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/valentina_gomez.jpg"
+      },
+      {
+        "name": "Andres Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Project Management",
+        "courseDescription": "Master project management principles and practices to ensure successful project delivery.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/andres_ramirez.jpg"
+      },
+      {
+        "name": "Camila Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Marketing Analytics",
+        "courseDescription": "Learn how to analyze marketing data to optimize campaigns and drive better business outcomes.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/camila_fernandez.jpg"
+      },
+      {
+        "name": "Diego Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Negotiation Skills",
+        "courseDescription": "Master negotiation techniques to achieve mutually beneficial outcomes and drive business success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/diego_hernandez.jpg"
+      },
+      {
+        "name": "Maria Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Strategy Execution",
+        "courseDescription": "Learn how to effectively execute your business strategy and achieve your desired outcomes.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/maria_ramirez.jpg"
+      },
+      {
+        "name": "Antonio Lopez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Development",
+        "courseDescription": "Learn strategic approaches to business development for sustainable growth and competitive advantage.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/antonio_lopez.jpg"
+      },
+      {
+        "name": "Isabella Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Marketing Fundamentals",
+        "courseDescription": "Master the foundational concepts of digital marketing to create effective online campaigns.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/isabella_fernandez.jpg"
+      },
+      {
+        "name": "Miguel Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Leadership Skills",
+        "courseDescription": "Develop leadership skills to inspire and motivate teams towards achieving business goals.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/miguel_ramirez.jpg"
+      },
+      {
+        "name": "Valentina Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "E-commerce Essentials",
+        "courseDescription": "Learn essential strategies and tools for launching and managing a successful e-commerce business.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/valentina_hernandez.jpg"
+      },
+      {
+        "name": "Carlos Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Business Planning",
+        "courseDescription": "Master the art of strategic planning to drive business growth and achieve long-term success.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/carlos_ramirez.jpg"
+      },
+      {
+        "name": "Laura Gonzalez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Management for Entrepreneurs",
+        "courseDescription": "Learn financial management techniques tailored for entrepreneurs to optimize resources and maximize profits.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/laura_gonzalez.jpg"
+      },
+      {
+        "name": "Gabriel Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Advanced Sales Techniques",
+        "courseDescription": "Master advanced sales strategies and tactics to close deals and drive revenue growth.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/gabriel_ramirez.jpg"
+      },
+      {
+        "name": "Sofia Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Social Media Marketing Strategy",
+        "courseDescription": "Develop a strategic approach to social media marketing to effectively engage and convert audiences.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/sofia_gomez.jpg"
+      },
+      {
+        "name": "Diego Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Communication",
+        "courseDescription": "Enhance communication skills to build strong relationships and convey messages effectively in business settings.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/diego_hernandez.jpg"
+      },
+      {
+        "name": "Ana Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Marketing Management",
+        "courseDescription": "Learn strategic marketing management principles to drive business growth and achieve competitive advantage.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/ana_fernandez.jpg"
+      },
+      {
+        "name": "Javier Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Entrepreneurial Finance",
+        "courseDescription": "Gain insights into financial management strategies for startups and small businesses to drive profitability.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/javier_ramirez.jpg"
+      },
+      {
+        "name": "Maria Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Branding Essentials",
+        "courseDescription": "Learn essential branding strategies and techniques to create a strong digital presence for your business.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/maria_gomez.jpg"
+      },
+      {
+        "name": "Fernando Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Project Management",
+        "courseDescription": "Learn project management methodologies and best practices to ensure project success and delivery.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/fernando_ramirez.jpg"
+      },
+      {
+        "name": "Valeria Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "E-commerce Strategy",
+        "courseDescription": "Develop a winning e-commerce strategy to attract customers, drive sales, and increase profitability.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/valeria_fernandez.jpg"
+      },
+      {
+        "name": "Ricardo Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Business Strategy",
+        "courseDescription": "Learn how to develop and execute a strategic plan that drives business growth and success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/ricardo_gomez.jpg"
+      },
+      {
+        "name": "Elena Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Planning for Entrepreneurs",
+        "courseDescription": "Master financial planning techniques tailored for entrepreneurs to achieve long-term business success.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/elena_ramirez.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Effective Leadership Development",
+        "courseDescription": "Develop essential leadership skills to inspire and lead teams towards achieving organizational goals.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Camila Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Social Media Marketing Strategy",
+        "courseDescription": "Learn effective social media marketing strategies to build brand awareness and drive engagement.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/camila_hernandez.jpg"
+      },
+      {
+        "name": "Manuel Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Marketing Planning",
+        "courseDescription": "Develop a strategic marketing plan to effectively target and engage your audience for business growth.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/manuel_gomez.jpg"
+      },
+      {
+        "name": "Valentina Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Analytics Fundamentals",
+        "courseDescription": "Gain foundational knowledge of business analytics to make data-driven decisions for business success.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/valentina_ramirez.jpg"
+      },
+      {
+        "name": "Isabella Rodriguez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Mastering Creative Marketing",
+        "courseDescription": "Unleash your creativity and learn innovative marketing strategies to captivate audiences and drive business growth.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/isabella_rodriguez.jpg"
+      },
+      {
+        "name": "Sebastian Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Storytelling in Business",
+        "courseDescription": "Harness the power of storytelling to connect with customers, inspire action, and differentiate your brand in the market.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/sebastian_gomez.jpg"
+      },
+      {
+        "name": "Luna Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Unlocking Entrepreneurial Creativity",
+        "courseDescription": "Discover techniques to unlock your entrepreneurial creativity and innovate solutions for business challenges.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/luna_ramirez.jpg"
+      },
+      {
+        "name": "Mateo Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Science of Persuasion",
+        "courseDescription": "Explore the psychological principles behind persuasion and influence to enhance your negotiation and sales skills.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/mateo_hernandez.jpg"
+      },
+      {
+        "name": "Valentina Lopez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Adventures in Business Innovation",
+        "courseDescription": "Embark on a journey of business innovation and learn how to foster creativity and drive growth in your organization.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/valentina_lopez.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Branding Secrets Unveiled",
+        "courseDescription": "Uncover the secrets to building a strong digital brand identity that resonates with your target audience and boosts brand equity.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Ana Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Leadership Mastery",
+        "courseDescription": "Master the art of strategic leadership to navigate complex challenges and drive organizational success with confidence.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/ana_gomez.jpg"
+      },
+      {
+        "name": "Javier Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Ultimate Guide to Digital Transformation",
+        "courseDescription": "Learn how to lead successful digital transformation initiatives that drive innovation, efficiency, and competitive advantage.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/javier_ramirez.jpg"
+      },
+      {
+        "name": "Valeria Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Psychology of Consumer Behavior",
+        "courseDescription": "Dive deep into consumer psychology and leverage insights to create irresistible products, services, and marketing campaigns.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/valeria_fernandez.jpg"
+      },
+      {
+        "name": "Gabriel Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Innovative Growth Strategies",
+        "courseDescription": "Discover innovative strategies for driving business growth in a rapidly changing market landscape.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/gabriel_ramirez.jpg"
+      },
+      {
+        "name": "Sofia Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Art of Strategic Decision Making",
+        "courseDescription": "Master the art of making strategic decisions that propel your business forward and outmaneuver competitors.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/sofia_hernandez.jpg"
+      },
+      {
+        "name": "Daniel Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Entrepreneur's Guide to Financial Freedom",
+        "courseDescription": "Learn essential financial management strategies and principles to achieve financial freedom and business success.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/daniel_gomez.jpg"
+      },
+      {
+        "name": "Luisa Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Future of Work: Embracing Remote Collaboration",
+        "courseDescription": "Explore best practices and tools for remote collaboration to thrive in the evolving landscape of the future workplace.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/luisa_ramirez.jpg"
+      },
+      {
+        "name": "Carlos Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Brand Storytelling",
+        "courseDescription": "Discover how to craft compelling brand stories that resonate with your audience and drive brand loyalty.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/carlos_fernandez.jpg"
+      },
+      {
+        "name": "Elena Lopez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Power of Emotional Intelligence in Leadership",
+        "courseDescription": "Harness the power of emotional intelligence to build strong relationships, inspire trust, and lead with empathy.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/elena_lopez.jpg"
+      },
+      {
+        "name": "Miguel Gonzalez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Secrets of High-Performance Teams",
+        "courseDescription": "Unlock the secrets to building and leading high-performance teams that drive innovation and deliver results.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/miguel_gonzalez.jpg"
+      },
+      {
+        "name": "Valentina Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Art of Influence: Persuasion in Business",
+        "courseDescription": "Master the art of influence and persuasion to negotiate effectively, drive sales, and win over stakeholders.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/valentina_gomez.jpg"
+      },
+      {
+        "name": "Andres Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Entrepreneur's Guide to Digital Marketing",
+        "courseDescription": "Learn digital marketing strategies and tactics tailored for entrepreneurs to build brand awareness and drive growth.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/andres_ramirez.jpg"
+      },
+      {
+        "name": "Camila Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Art of Disruption: Innovating in Established Industries",
+        "courseDescription": "Discover strategies for disrupting traditional industries through innovation and creating new market opportunities.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/camila_hernandez.jpg"
+      },
+      {
+        "name": "Manuel Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Retail: E-commerce Evolution",
+        "courseDescription": "Explore the future trends and innovations shaping the e-commerce landscape and learn how to stay ahead of the curve.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/manuel_gomez.jpg"
+      },
+      {
+        "name": "Alicia Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Innovative Marketing Strategies for Gen Z",
+        "courseDescription": "Unlock the secrets to effectively reaching and engaging Generation Z consumers with cutting-edge marketing strategies.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/alicia_fernandez.jpg"
+      },
+      {
+        "name": "Julio Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Virtual Presentations",
+        "courseDescription": "Master the art of delivering engaging and impactful presentations in virtual environments for business success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/julio_ramirez.jpg"
+      },
+      {
+        "name": "Valeria Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Innovation: From Idea to Execution",
+        "courseDescription": "Learn how to foster a culture of innovation, generate groundbreaking ideas, and execute them effectively for business growth.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/valeria_hernandez.jpg"
+      },
+      {
+        "name": "Juan Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Collaboration",
+        "courseDescription": "Discover best practices for remote collaboration and effectively lead teams in distributed work environments.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/juan_lopez.jpg"
+      },
+      {
+        "name": "Isabella Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Psychology of Brand Loyalty",
+        "courseDescription": "Gain insights into the psychological factors that drive brand loyalty and learn how to cultivate a loyal customer base.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/isabella_ramirez.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Data-Driven Decision Making for Entrepreneurs",
+        "courseDescription": "Learn how to leverage data analytics to make informed business decisions and drive growth.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Valentina Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Building Resilience in Times of Crisis",
+        "courseDescription": "Develop resilience strategies to navigate challenges and emerge stronger in the face of adversity.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/valentina_gomez.jpg"
+      },
+      {
+        "name": "Lucas Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Digital Storytelling",
+        "courseDescription": "Learn how to craft compelling narratives that resonate with digital audiences and drive engagement.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/lucas_hernandez.jpg"
+      },
+      {
+        "name": "Elena Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Negotiation Techniques",
+        "courseDescription": "Master negotiation techniques and tactics to achieve favorable outcomes and build successful business relationships.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/elena_ramirez.jpg"
+      },
+      {
+        "name": "Alejandro Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Customer Experience Design",
+        "courseDescription": "Discover how to create exceptional customer experiences that drive loyalty, retention, and advocacy.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/alejandro_gomez.jpg"
+      },
+      {
+        "name": "Sofia Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Leadership for Sustainable Growth",
+        "courseDescription": "Develop leadership skills and strategies to drive sustainable growth and organizational success.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/sofia_hernandez.jpg"
+      },
+      {
+        "name": "Carlos Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Retail: Omnichannel Strategies",
+        "courseDescription": "Explore omnichannel retail strategies to seamlessly integrate online and offline experiences and drive sales.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/carlos_ramirez.jpg"
+      },
+      {
+        "name": "Maria Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Talent Management",
+        "courseDescription": "Learn how to attract, retain, and develop top talent to drive organizational performance and achieve business goals.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/maria_fernandez.jpg"
+      },
+      {
+        "name": "Juan Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Influence: Persuasion in Business",
+        "courseDescription": "Master the art of influence and persuasion to negotiate effectively, drive sales, and win over stakeholders.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/juan_gomez.jpg"
+      },
+      {
+        "name": "Valeria Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Power of Agile Leadership",
+        "courseDescription": "Learn how to lead with agility and adaptability to navigate change and drive business innovation.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/valeria_ramirez.jpg"
+      },
+      {
+        "name": "Diego Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Team Management",
+        "courseDescription": "Discover strategies for effectively managing remote teams and maximizing productivity in virtual work environments.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/diego_hernandez.jpg"
+      },
+      {
+        "name": "Camila Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Brand Positioning",
+        "courseDescription": "Learn how to position your brand effectively in the market to stand out from competitors and attract loyal customers.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/camila_gomez.jpg"
+      },
+      {
+        "name": "Andres Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Sales Psychology",
+        "courseDescription": "Explore the psychological principles behind successful sales techniques and strategies to close more deals.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/andres_fernandez.jpg"
+      },
+      {
+        "name": "Isabella Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Crisis Management",
+        "courseDescription": "Develop crisis management strategies to effectively navigate and mitigate risks during challenging times.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/isabella_hernandez.jpg"
+      },
+      {
+        "name": "Lucas Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Digital Transformation",
+        "courseDescription": "Learn how to lead successful digital transformation initiatives that drive innovation and growth in your organization.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/lucas_ramirez.jpg"
+      },
+      {
+        "name": "Carmen Lopez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Art of Product Positioning",
+        "courseDescription": "Learn how to strategically position your products in the market to attract your target audience and drive sales.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/carmen_lopez.jpg"
+      },
+      {
+        "name": "Mateo Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Time Management Strategies",
+        "courseDescription": "Discover techniques for managing your time efficiently to increase productivity and achieve your business goals.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/mateo_fernandez.jpg"
+      },
+      {
+        "name": "Valeria Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Art of Strategic Partnerships",
+        "courseDescription": "Unlock the power of strategic partnerships to expand your reach, enhance your offerings, and drive mutual growth.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/valeria_gomez.jpg"
+      },
+      {
+        "name": "Emilio Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Psychology of Entrepreneurship",
+        "courseDescription": "Explore the mindset and psychological traits of successful entrepreneurs to fuel your own entrepreneurial journey.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/emilio_ramirez.jpg"
+      },
+      {
+        "name": "Luna Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Building a High-Performance Culture",
+        "courseDescription": "Learn how to create a culture of high performance within your organization to drive productivity and success.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/luna_fernandez.jpg"
+      },
+      {
+        "name": "Diego Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Pricing",
+        "courseDescription": "Discover strategies for setting prices that maximize profitability and align with your business objectives.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/diego_gomez.jpg"
+      },
+      {
+        "name": "Sofia Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Leadership",
+        "courseDescription": "Develop leadership skills to effectively lead remote teams and navigate the challenges of remote work.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/sofia_ramirez.jpg"
+      },
+      {
+        "name": "Julian Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Business Networking",
+        "courseDescription": "Learn how to build meaningful professional relationships and leverage your network for business success.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/julian_hernandez.jpg"
+      },
+      {
+        "name": "Valentina Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Entrepreneur's Guide to Growth Hacking",
+        "courseDescription": "Discover growth hacking techniques and strategies to rapidly grow your startup or small business.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/valentina_ramirez.jpg"
+      },
+      {
+        "name": "Lucia Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Customer Relationship Management",
+        "courseDescription": "Learn how to build and maintain strong relationships with customers to drive loyalty and retention.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/lucia_gomez.jpg"
+      },
+      {
+        "name": "Andres Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Digital Transformation",
+        "courseDescription": "Navigate the complexities of digital transformation and drive innovation and growth in your organization.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/andres_hernandez.jpg"
+      },
+      {
+        "name": "Elena Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Personal Branding",
+        "courseDescription": "Learn how to craft a compelling personal brand that sets you apart and attracts opportunities.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/elena_gomez.jpg"
+      },
+      {
+        "name": "Gabriel Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Future of Retail: E-commerce Strategies",
+        "courseDescription": "Explore innovative e-commerce strategies to stay competitive and thrive in the evolving retail landscape.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/gabriel_hernandez.jpg"
+      },
+      {
+        "name": "Camila Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Decision Making",
+        "courseDescription": "Learn how to make strategic decisions that drive business growth and create long-term value.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/camila_ramirez.jpg"
+      },
+      {
+        "name": "Carlos Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Science of Consumer Behavior",
+        "courseDescription": "Gain insights into consumer behavior and psychology to optimize your marketing strategies and drive sales.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/carlos_fernandez.jpg"
+      },
+      {
+        "name": "Maria Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Business Model Innovation",
+        "courseDescription": "Discover strategies for innovating your business model to stay relevant and competitive in a rapidly changing market.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/maria_hernandez.jpg"
+      },
+      {
+        "name": "Javier Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Entrepreneur's Guide to Scaling",
+        "courseDescription": "Learn how to scale your business effectively while maintaining operational efficiency and profitability.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/javier_gomez.jpg"
+      },
+      {
+        "name": "Valentina Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Customer Segmentation",
+        "courseDescription": "Discover how to segment your customer base effectively to tailor your marketing efforts and drive customer engagement.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/valentina_lopez.jpg"
+      },
+      {
+        "name": "Luis Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "The Future of Work: Building Remote Teams",
+        "courseDescription": "Learn how to build and manage high-performing remote teams to drive productivity and collaboration.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/luis_ramirez.jpg"
+      },
+      {
+        "name": "Ana Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Innovation",
+        "courseDescription": "Discover frameworks and techniques for fostering a culture of innovation and driving strategic innovation initiatives.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/ana_fernandez.jpg"
+      },
+      {
+        "name": "Marcela Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Mastering Digital Marketing",
+        "courseDescription": "Unlock the power of digital marketing to drive traffic, generate leads, and boost sales for your business.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/marcela_gomez.jpg"
+      },
+      {
+        "name": "Ricardo Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Project Management Techniques",
+        "courseDescription": "Learn proven project management techniques to successfully plan, execute, and deliver projects on time and within budget.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/ricardo_hernandez.jpg"
+      },
+      {
+        "name": "Isabel Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Fundamentals of Business Strategy",
+        "courseDescription": "Gain a solid understanding of business strategy fundamentals and learn how to formulate and execute strategic plans.",
+        "ratings": 5,
+        "price": 1300,
+        "imageUrl": "https://example.com/isabel_ramirez.jpg"
+      },
+      {
+        "name": "Juanita Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Negotiation",
+        "courseDescription": "Master negotiation skills to achieve win-win outcomes, build strong relationships, and maximize business opportunities.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/juanita_fernandez.jpg"
+      },
+      {
+        "name": "Diego Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Psychology of Marketing",
+        "courseDescription": "Explore the psychological principles that influence consumer behavior and learn how to apply them in your marketing strategies.",
+        "ratings": 5,
+        "price": 1100,
+        "imageUrl": "https://example.com/diego_lopez.jpg"
+      },
+      {
+        "name": "Valeria Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Business Development",
+        "courseDescription": "Develop strategic business development skills to identify growth opportunities, forge partnerships, and expand your business.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/valeria_fernandez.jpg"
+      },
+      {
+        "name": "Santiago Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Leadership",
+        "courseDescription": "Learn essential leadership skills and techniques to inspire and motivate your team to achieve outstanding results.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/santiago_gomez.jpg"
+      },
+      {
+        "name": "Luisa Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Digital Branding Strategies",
+        "courseDescription": "Discover effective digital branding strategies to build brand awareness, credibility, and loyalty in the digital age.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/luisa_hernandez.jpg"
+      },
+      {
+        "name": "Eduardo Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Public Speaking",
+        "courseDescription": "Develop confidence and charisma as a public speaker and learn how to deliver impactful presentations that resonate with your audience.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/eduardo_ramirez.jpg"
+      },
+      {
+        "name": "Ana Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Financial Management",
+        "courseDescription": "Learn strategic financial management techniques to optimize financial performance, mitigate risks, and create value for your business.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/ana_gomez.jpg"
+      },
+      {
+        "name": "Javier Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Innovation",
+        "courseDescription": "Cultivate a culture of innovation within your organization and learn how to generate and implement innovative ideas.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/javier_hernandez.jpg"
+      },
+      {
+        "name": "Maria Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Essentials of Entrepreneurship",
+        "courseDescription": "Get a comprehensive overview of entrepreneurship essentials and learn how to start and grow your own business.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/maria_lopez.jpg"
+      },
+      {
+        "name": "Pedro Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Time Management",
+        "courseDescription": "Master time management techniques to increase productivity, reduce stress, and achieve work-life balance.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/pedro_fernandez.jpg"
+      },
+      {
+        "name": "Isabella Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Psychology of Leadership",
+        "courseDescription": "Explore the psychological aspects of leadership and learn how to inspire and motivate others to achieve common goals.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/isabella_gomez.jpg"
+      },
+      {
+        "name": "Manuel Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Customer Acquisition",
+        "courseDescription": "Discover effective strategies and tactics for acquiring new customers and growing your customer base.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/manuel_ramirez.jpg"
+      },
+      {
+        "name": "Valentina Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Collaboration",
+        "courseDescription": "Explore best practices for remote collaboration and effectively lead teams in distributed work environments.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/valentina_hernandez.jpg"
+      },
+      {
+        "name": "Luis Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Brand Management",
+        "courseDescription": "Learn how to develop and manage a strong brand identity to differentiate your business and drive customer loyalty.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/luis_gomez.jpg"
+      },
+      {
+        "name": "Sofia Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Planning",
+        "courseDescription": "Develop strategic planning skills to set clear objectives, allocate resources effectively, and achieve business success.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/sofia_ramirez.jpg"
+      },
+      {
+        "name": "Andrea Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Retail: Omnichannel Strategies",
+        "courseDescription": "Explore omnichannel retail strategies to seamlessly integrate online and offline experiences and drive sales.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/andrea_hernandez.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Business Analytics",
+        "courseDescription": "Learn how to leverage business analytics to gain valuable insights and make data-driven decisions for business success.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Mariana Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Brand Storytelling",
+        "courseDescription": "Learn how to craft compelling brand stories that resonate with your audience and build emotional connections.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/mariana_gomez.jpg"
+      },
+      {
+        "name": "Gabriel Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Essentials of Business Communication",
+        "courseDescription": "Master the fundamentals of effective business communication to convey your message clearly and persuasively.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/gabriel_ramirez.jpg"
+      },
+      {
+        "name": "Luna Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Human Resource Management",
+        "courseDescription": "Learn how to align HR strategies with business objectives, attract top talent, and foster a high-performance culture.",
+        "ratings": 5,
+        "price": 1300,
+        "imageUrl": "https://example.com/luna_hernandez.jpg"
+      },
+      {
+        "name": "Diego Lopez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Data Visualization",
+        "courseDescription": "Discover techniques for creating impactful data visualizations that effectively communicate insights and drive decision-making.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/diego_lopez.jpg"
+      },
+      {
+        "name": "Valentina Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Science of Emotional Intelligence",
+        "courseDescription": "Develop emotional intelligence skills to enhance self-awareness, manage emotions, and build stronger relationships.",
+        "ratings": 5,
+        "price": 1100,
+        "imageUrl": "https://example.com/valentina_ramirez.jpg"
+      },
+      {
+        "name": "Jorge Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Team Collaboration",
+        "courseDescription": "Learn strategies and tools for fostering collaboration and teamwork in remote work environments.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/jorge_gomez.jpg"
+      },
+      {
+        "name": "Camila Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Innovation",
+        "courseDescription": "Explore techniques for fostering a culture of innovation and driving strategic innovation initiatives.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/camila_hernandez.jpg"
+      },
+      {
+        "name": "Santiago Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Retail: Customer Experience Strategies",
+        "courseDescription": "Discover strategies for delivering exceptional customer experiences both online and offline to drive loyalty and retention.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/santiago_ramirez.jpg"
+      },
+      {
+        "name": "Elena Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Leadership Development",
+        "courseDescription": "Learn how to develop leadership skills in yourself and others to drive organizational success and growth.",
+        "ratings": 5,
+        "price": 1300,
+        "imageUrl": "https://example.com/elena_gomez.jpg"
+      },
+      {
+        "name": "Carlos Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Employee Engagement",
+        "courseDescription": "Discover strategies for engaging and motivating remote employees to foster productivity, satisfaction, and retention.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/carlos_hernandez.jpg"
+      },
+      {
+        "name": "Isabella Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Decision-Making",
+        "courseDescription": "Learn how to make informed and effective strategic decisions that drive business growth and success.",
+        "ratings": 5,
+        "price": 1100,
+        "imageUrl": "https://example.com/isabella_ramirez.jpg"
+      },
+      {
+        "name": "Lucas Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Psychology of Consumer Behavior",
+        "courseDescription": "Gain insights into the psychological factors that influence consumer behavior and learn how to apply them in marketing.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/lucas_gomez.jpg"
+      },
+      {
+        "name": "Valeria Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Partnerships",
+        "courseDescription": "Discover how to identify, cultivate, and leverage strategic partnerships to drive business growth and innovation.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/valeria_hernandez.jpg"
+      },
+      {
+        "name": "Diego Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Leadership",
+        "courseDescription": "Learn how to lead remote teams effectively, foster collaboration, and drive performance in virtual work environments.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/diego_ramirez.jpg"
+      },
+      {
+        "name": "Sofia Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Business Development",
+        "courseDescription": "Learn how to identify growth opportunities, forge strategic partnerships, and expand your business effectively.",
+        "ratings": 5,
+        "price": 1300,
+        "imageUrl": "https://example.com/sofia_gomez.jpg"
+      },
+      {
+        "name": "Mateo Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Product Management",
+        "courseDescription": "Master the skills and techniques of product management to successfully develop and launch products that meet customer needs.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/mateo_hernandez.jpg"
+      },
+      {
+        "name": "Juliana Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Essentials of Digital Transformation",
+        "courseDescription": "Gain a comprehensive understanding of digital transformation concepts, strategies, and best practices.",
+        "ratings": 5,
+        "price": 1100,
+        "imageUrl": "https://example.com/juliana_ramirez.jpg"
+      },
+      {
+        "name": "Andres Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Strategic Marketing",
+        "courseDescription": "Learn how to develop and implement strategic marketing plans that drive brand awareness, engagement, and sales.",
+        "ratings": 4,
+        "price": 1300,
+        "imageUrl": "https://example.com/andres_gomez.jpg"
+      },
+      {
+        "name": "Valentina Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Future of Work: Remote Collaboration",
+        "courseDescription": "Explore best practices for remote collaboration and effectively lead teams in distributed work environments.",
+        "ratings": 5,
+        "price": 1200,
+        "imageUrl": "https://example.com/valentina_ramirez.jpg"
+      },
+      {
+        "name": "Luis Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "The Art of Sales Negotiation",
+        "courseDescription": "Master negotiation techniques and strategies to achieve win-win outcomes and close deals effectively.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/luis_hernandez.jpg"
       }
-  ]
+]
 
-  
+
 module.exports = courses
