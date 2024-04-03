@@ -10,7 +10,7 @@
 body {
     width: 100%;
     height: 200vh;
-    background: #1B1B1D;
+    background-image: linear-gradient(135deg, #062325, #143e42, #2f686d, #387b81, #3d8e94);
 }
 
 header {
@@ -57,7 +57,7 @@ header .navbar {
 }
 
 .navbar .menu-links li a:hover {
-    color: #1d58bf;
+    color: #6fd1d8;
 }
 
 .navbar .menu-links .join-btn a {
@@ -69,7 +69,7 @@ header .navbar {
 .navbar .menu-links .join-btn a:hover {
     color: #fff;
     border-color: transparent;
-    background: #1130f3;
+    background: #6fd1d8
 }
 
 .hero-section {
@@ -119,14 +119,14 @@ header .navbar {
     border: none;
     outline: none;
     cursor: pointer;
-    background: #1d3bbf;
+    background: #062325;
     color: #fff;
     border-radius: 0 4px 4px 0;
     transition: background 0.2s ease;
 }
 
 .hero-section .search-form button:hover {
-    background: #19a463;
+    background: #6fd1d8;
 }
 
 .hero-section .popular-tags {
@@ -208,7 +208,7 @@ header .navbar {
   .auth-form button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #6fd1d8;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -222,7 +222,7 @@ header .navbar {
   .switch-form-btn {
     background: none;
     border: none;
-    color: #007bff;
+    color: #3d8e94;
     cursor: pointer;
   }
   

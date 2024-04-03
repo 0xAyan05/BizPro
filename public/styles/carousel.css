@@ -13,6 +13,8 @@
     height: 17rem;
     background-color: beige;
     border: none;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 .carousel-container button {
@@ -39,9 +41,11 @@
 .carousel {
     display: flex;
     gap: 10px;
+    background-color: #2f686d;
     overflow-y: hidden;
     overflow-x: scroll;
     border: none;
+    border-radius: 8px;
 }
 
 .carousel .card {
@@ -51,14 +55,16 @@
     width: 300px;
     height: 450px;
     overflow: hidden;
-    background-color: cadetblue;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #2f686d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
 }
 
 .carousel-container .card img {
     width: 100%;
     height: auto;
-    border-radius: 15px 15px 0 0;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .carousel-container .card p {
@@ -67,4 +73,18 @@
     color: white;
     text-align: center;
     margin: 0;
+}
+.carousel :hover {
+    transition-duration: 0.2s;
+    background-color: #3d8085;
+}
+::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+    background-color: #3d8e94;
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #062325;
+    border-radius: 5px;
 }
