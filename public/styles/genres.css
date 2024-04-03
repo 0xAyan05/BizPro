@@ -1,0 +1,77 @@
+/* <div class="courses-container">
+        <% courses.forEach(e => { %>
+            <div class="course-card">
+                <div class="course-picture"><img src=`${e.imageUrl}` alt=""></div>
+                <div class="course-title"><%= e.businessOnlineCourseTitle %></div>
+                <div class="course-expert-name"><%= e.name %></div>
+                <div class="course-description"><%= e.courseDescription %></div>
+                <div class="price"><%= e.price %></div>
+                <div class="ratings">
+                    <% for (let i=0; i< e.ratings; i++) { %>
+                        <div class="stars"></div>
+                        <% } %>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+*/
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    height: 5rem;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    overflow: hidden;
+}
+.courses-container {
+    width: 85%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+.course-card{
+    background-color: bisque;
+    width: 15rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: start;
+}
+.course-description {
+    height: 3.65rem;
+    overflow: hidden;
+    color: rgb(91, 91, 91);
+}
+
+.course-picture{
+    width: 95%;
+    height: 10rem;
+    background:  linear-gradient(135deg, #062325, #143e42, #2f686d, #387b81, #3d8e94);
+}
+
+.course-title {
+    margin: 10px 0px;
+    font-weight: bolder;
+    height: 2.3rem;
+    overflow: hidden;
+}
+
+.ratings {
+    display: flex;
+    gap: 2px;
+}
+.stars{
+    padding: 4px;
+    background: goldenrod;
+}
+.price {
+    margin: 5px 0px;
+    font-size: 1rem;
+    font-weight: bold;
+}
