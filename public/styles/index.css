@@ -9,7 +9,7 @@
 
 body {
     width: 100%;
-    height: 200vh;
+    height: auto;
     background-image: linear-gradient(135deg, #062325, #143e42, #2f686d, #387b81, #3d8e94);
 }
 

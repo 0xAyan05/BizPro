@@ -1,7 +1,7 @@
 .carousel-services-section {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 81.48rem;
     height: 100vh;
     border: none;
 }
@@ -59,4 +59,8 @@
     margin-top: -2.5rem;
     width: 12rem;
     user-select: none;
+}
+.popCourse {
+    margin: 19px;
+    color: #fff;
 }
