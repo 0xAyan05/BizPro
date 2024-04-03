@@ -42,12 +42,6 @@ overflow-x: hidden;
 }
 
 
-/* 
-<div class="card">
-    <p>${e.services}</p>
-    <img  src="${e.poster}" ></img>
-</div>` */
-
 .carousel .card{
     text-align: center;
     font-size: 1.2rem;

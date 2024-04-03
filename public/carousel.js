@@ -27,13 +27,24 @@ carousel.addEventListener('mousemove', e => {
 fetch('http://localhost:5000/api/services')
 .then(res => res.json())
 .then(data => {
-    console.log(data)
-    data.forEach(e => {
+    console.log(data.length)
+    data.forEach((e, i) => {
         carousel.innerHTML += `
         <div class="card" style="background-image: url('${e.poster}')" >
         <div class="text" >${e.services}</div>
         </div>`
     })
+
+  const cards = document.querySelectorAll('.card')
+  cards.forEach(card => {
+    card.addEventListener('click', (e)=>{
+        
+        fetch(`http://localhost:5000/genres/${card.children[0].textContent}`)        
+        .then(res => {
+            window.open(res.url, '_self')
+        })
+    })
+  })
 })
 .catch(err => console.log(err))
 
