@@ -2,8 +2,12 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 const path = require('path')
+
+const courses = require('./utils/courses.js')
 const top_services = require('./utils/services.js')
+
 const PORT = process.env.PORT || 5000
+
 
 app.use(cors({
     origin: "*",
