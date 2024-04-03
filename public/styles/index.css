@@ -20,6 +20,7 @@ header {
     width: 100%;
     z-index: 1;
     padding: 20px;
+    background-image: linear-gradient(135deg, rgba(6, 35, 37, 0.8), rgba(20, 62, 66, 0.8), rgba(47, 104, 109, 0.8), rgba(56, 123, 129, 0.8), rgba(61, 142, 148, 0.8));
 }
 
 header .navbar {
