@@ -8,45 +8,74 @@
 .carousel-container {
     position: relative;
     display: flex;
-    max-width: 95%;
-    height: 17rem;
-    background-color: beige;
+    width: 85rem;
+    height: 20rem;
+    background-color: transparent;
 }
 
 .carousel-container button {
+    z-index: 100;
+    font-size: 5rem;
     padding: 1rem 1rem;
+    position: absolute;
     background-color: transparent;
     border: none;
+    color: white;
+    transform: translateY(65%);
 }
 .left {
-    left: 0px;
-    position: absolute;
+    left: -4.5rem;
 }
 .right {
-    right: 0px;
-    position: absolute;
+    right: -4.5rem;
 }
-
-/* carousel.innerHTML += `<div>
-<img src="${e.poster}" ></img>
-<p>${e.services}</p>
-</div>` */
-
 .carousel {
 display: flex;
+width: 100%;
+scroll-behavior: smooth;
+height: 100%;
 gap: 10px;
-overflow-y: hidden;
-overflow-x: scroll;
+overflow-x: hidden;
 }
+
+
+/* 
+<div class="card">
+    <p>${e.services}</p>
+    <img  src="${e.poster}" ></img>
+</div>` */
+
 .carousel .card{
-    display: flex;
-    max-width: 20rem;
-    position: relative;
-    background-color: cadetblue;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5rem 2rem;
+    background-position: center center;
+    border-radius: 10px;
+    box-shadow: 
+    inset 0px 3rem 1.5rem #06041545,
+    inset 0px 5.5rem 1.5rem #0e2b3a2c;
 }
-.carousel-container .card img {
-   
+
+.card .text{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: -2.5rem;
+    width: 12rem;
 }
-.carousel-container .card p {
-    
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
