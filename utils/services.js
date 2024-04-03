@@ -11,7 +11,6 @@ const top_services = [
     { services: 'Investment Risk Mangement', poster: 'https://media.licdn.com/dms/image/D4D12AQFzjviKu2K-tA/article-cover_image-shrink_720_1280/0/1674742670596?e=2147483647&v=beta&t=fJykLREiZsEH2ccfSRJTyPB4lIsNY0eZpJ2xZ59w2QM' },
     { services: 'Innovation', poster: 'https://media.licdn.com/dms/image/D4E12AQHNz2Ykhn2NNA/article-cover_image-shrink_720_1280/0/1674740725644?e=2147483647&v=beta&t=xjdL2btMBxa7Da0N2p6AoXL_l8ztObUQWYssnfxujsk' },
     { services: 'AI, Business & the Future Work', poster: 'https://media.licdn.com/dms/image/D4E12AQHMcWXrm0D3rA/article-cover_image-shrink_720_1280/0/1674740557870?e=2147483647&v=beta&t=fp2Dw9qNumXiZoOVcpH62bm_okwCoA0XHVili01DN0o' },
-    { services: 'Credential of Readiness', poster: 'https://media.licdn.com/dms/image/D4E12AQEDWeg-X7UEMg/article-cover_image-shrink_720_1280/0/1674740380711?e=2147483647&v=beta&t=OrsUTtZaRdREHTMN7BRdDryuAl9Mj5IMBGRn53Q8Vys' },
     { services: 'Marketing', poster: 'https://media.licdn.com/dms/image/D4E12AQGVZVjowpeEHw/article-cover_image-shrink_720_1280/0/1674740197257?e=2147483647&v=beta&t=-guEBwS-4ncGlMvlBQwO1EG3b4WaizsjghjPsG7LRI0' },
     { services: 'Business Development', poster: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7zLS-t15JX7nKEe_3wjXjoM3uuFaKyrwVUpPPIXQXUyy8NKuQvfOWedZfdIBiX25MsY&usqp=CAU' },
     { services: 'Brand Identity and Strategy', poster: 'https://media.licdn.com/dms/image/D4E12AQGmLOZBY3wtfQ/article-cover_image-shrink_720_1280/0/1674740190437?e=2147483647&v=beta&t=jMgg3gre4YC_RJOL4kZi8o2mMU-uO3YCQlPwBY3Aawk' },

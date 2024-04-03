@@ -1,4 +1,184 @@
 const courses = [
+  {
+    "name": "Sophia Chen",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI in Business Strategy",
+    "courseDescription": "Explore how AI is transforming business strategy and learn how to leverage AI technologies to gain a competitive edge.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/sophia_chen.jpg"
+  },
+  {
+    "name": "Maxwell Johnson",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "The Future of Work: AI and Automation",
+    "courseDescription": "Discover the impact of AI and automation on the future of work and learn how to adapt and thrive in the changing landscape.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/maxwell_johnson.jpg"
+  },
+  {
+    "name": "Emily Wang",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "Ethical AI in Business",
+    "courseDescription": "Learn about the ethical implications of AI in business and develop strategies for responsible AI adoption and implementation.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/emily_wang.jpg"
+  },
+  {
+    "name": "Michael Li",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Business Innovation",
+    "courseDescription": "Discover how AI is driving business innovation and learn how to harness AI technologies to foster innovation in your organization.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/michael_li.jpg"
+  },
+  {
+    "name": "Ava Patel",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI for Business Leaders",
+    "courseDescription": "Gain insights into AI technologies and their business applications to make informed decisions and drive business growth.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/ava_patel.jpg"
+  },
+  {
+    "name": "Ethan Kim",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Customer Experience",
+    "courseDescription": "Learn how AI is revolutionizing customer experience management and discover strategies for implementing AI-driven CX solutions.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/ethan_kim.jpg"
+  },
+  {
+    "name": "Olivia Chang",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI in Human Resources",
+    "courseDescription": "Explore how AI is reshaping HR functions and learn how to leverage AI technologies to enhance talent acquisition and management.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/olivia_chang.jpg"
+  },
+  {
+    "name": "Daniel Park",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Marketing Strategies",
+    "courseDescription": "Discover how AI is revolutionizing marketing and learn how to develop AI-driven marketing strategies to drive business growth.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/daniel_park.jpg"
+  },
+  {
+    "name": "Sophie Nguyen",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI in Supply Chain Management",
+    "courseDescription": "Learn how AI technologies are optimizing supply chain processes and discover how to implement AI-driven SCM solutions.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/sophie_nguyen.jpg"
+  },
+  {
+    "name": "Adam Chen",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Financial Analysis",
+    "courseDescription": "Explore how AI is transforming financial analysis and learn how to leverage AI technologies to make better financial decisions.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/adam_chen.jpg"
+  },
+  {
+    "name": "Lily Kim",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI for Business Automation",
+    "courseDescription": "Discover how AI is automating business processes and learn how to implement AI-driven automation solutions to improve efficiency.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/lily_kim.jpg"
+  },
+  {
+    "name": "William Liu",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Sales Strategies",
+    "courseDescription": "Learn how AI is revolutionizing sales and discover strategies for implementing AI-driven sales strategies to drive revenue growth.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/william_liu.jpg"
+  },
+  {
+    "name": "Ella Patel",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI in Business Analytics",
+    "courseDescription": "Explore how AI is transforming business analytics and learn how to leverage AI technologies to gain actionable insights.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/ella_patel.jpg"
+  },
+  {
+    "name": "Lucas Nguyen",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Product Development",
+    "courseDescription": "Discover how AI is revolutionizing product development and learn how to implement AI-driven approaches to innovate products.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/lucas_nguyen.jpg"
+  },
+  {
+    "name": "Aria Chang",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI in Risk Management",
+    "courseDescription": "Learn how AI is enhancing risk management practices and discover how to leverage AI technologies to mitigate business risks.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/aria_chang.jpg"
+  },
+  {
+    "name": "James Park",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Business Intelligence",
+    "courseDescription": "Explore how AI is revolutionizing business intelligence and learn how to leverage AI technologies to drive data-driven decision-making.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/james_park.jpg"
+  },
+  {
+    "name": "Eva Chen",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI in Project Management",
+    "courseDescription": "Discover how AI is transforming project management practices and learn how to leverage AI technologies to streamline project workflows.",
+    "ratings": 5,
+    "price": 1400,
+    "imageUrl": "https://example.com/eva_chen.jpg"
+  },
+  {
+    "name": "Ryan Kim",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Business Process Optimization",
+    "courseDescription": "Learn how AI is optimizing business processes and discover strategies for implementing AI-driven process optimization solutions.",
+    "ratings": 4,
+    "price": 1200,
+    "imageUrl": "https://example.com/ryan_kim.jpg"
+  },
+  {
+    "name": "Emma Patel",
+    "isVerifiedExpert": true,
+    "businessOnlineCourseTitle": "AI in Talent Management",
+    "courseDescription": "Explore how AI is revolutionizing talent management practices and learn how to leverage AI technologies to attract and retain top talent.",
+    "ratings": 5,
+    "price": 1500,
+    "imageUrl": "https://example.com/emma_patel.jpg"
+  },
+  {
+    "name": "Nathan Nguyen",
+    "isVerifiedExpert": false,
+    "businessOnlineCourseTitle": "AI-Powered Customer Insights",
+    "courseDescription": "Discover how AI is transforming customer insights and learn how to leverage AI technologies to gain deeper customer understanding.",
+    "ratings": 4,
+    "price": 1100,
+    "imageUrl": "https://example.com/nathan_nguyen.jpg"
+  },
     {
         "name": "Maria Santos",
         "isVerifiedExpert": true,
@@ -2338,7 +2518,368 @@ const courses = [
         "ratings": 4,
         "price": 1100,
         "imageUrl": "https://example.com/luis_hernandez.jpg"
-      }
+      },
+      {
+        "name": "Sofia Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Advanced Investment Risk Management",
+        "courseDescription": "Dive deep into advanced techniques and strategies for managing investment risks effectively and optimizing portfolio performance.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/sofia_fernandez.jpg"
+      },
+      {
+        "name": "Mateo Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Introduction to Business Management",
+        "courseDescription": "Gain a foundational understanding of business management principles and practices to lead teams and drive organizational success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/mateo_gomez.jpg"
+      },
+      {
+        "name": "Valentina Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategic Investment Planning",
+        "courseDescription": "Learn how to develop and implement strategic investment plans to achieve financial goals while effectively managing risks.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/valentina_hernandez.jpg"
+      },
+      {
+        "name": "Diego Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Business Risk Assessment and Mitigation",
+        "courseDescription": "Discover techniques for assessing and mitigating various business risks to protect assets and sustain long-term growth.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/diego_ramirez.jpg"
+      },
+      {
+        "name": "Isabella Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Investment Portfolio Management",
+        "courseDescription": "Master the art and science of managing investment portfolios to optimize returns while minimizing risks.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/isabella_gomez.jpg"
+      },
+      {
+        "name": "Javier Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Effective Business Leadership",
+        "courseDescription": "Learn essential leadership skills and strategies to inspire and guide your team to achieve business objectives.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/javier_hernandez.jpg"
+      },
+      {
+        "name": "Valeria Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Risk Management Strategies",
+        "courseDescription": "Explore advanced financial risk management strategies to mitigate risks and optimize financial performance.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/valeria_ramirez.jpg"
+      },
+      {
+        "name": "Lucas Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Business Planning",
+        "courseDescription": "Learn how to develop comprehensive strategic business plans to guide decision-making and achieve business objectives.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/lucas_fernandez.jpg"
+      },
+      {
+        "name": "Elena Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Asset Allocation Strategies",
+        "courseDescription": "Gain insights into effective asset allocation strategies to diversify investment portfolios and manage risk.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/elena_gomez.jpg"
+      },
+      {
+        "name": "Andres Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Risk Management in Entrepreneurship",
+        "courseDescription": "Learn how to identify, assess, and mitigate risks associated with starting and growing a business.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/andres_ramirez.jpg"
+      },
+      {
+        "name": "Camila Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Investment Analysis and Valuation",
+        "courseDescription": "Master the fundamentals of investment analysis and valuation techniques to make informed investment decisions.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/camila_hernandez.jpg"
+      },
+      {
+        "name": "Luisa Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Risk Management",
+        "courseDescription": "Explore strategic risk management principles and frameworks to identify and mitigate risks proactively.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/luisa_ramirez.jpg"
+      },
+      {
+        "name": "Carlos Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Financial Modeling for Investment Analysis",
+        "courseDescription": "Learn how to build and analyze financial models to evaluate investment opportunities and make data-driven decisions.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/carlos_gomez.jpg"
+      },
+      {
+        "name": "Maria Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Operational Risk Management",
+        "courseDescription": "Gain a comprehensive understanding of operational risk management and learn how to implement effective risk mitigation strategies.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/maria_hernandez.jpg"
+      },
+      {
+        "name": "Diego Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Strategies for Business Growth",
+        "courseDescription": "Discover strategies and tactics for driving sustainable business growth while effectively managing associated risks.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/diego_fernandez.jpg"
+      },
+      {
+        "name": "Ana Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Risk Management in Supply Chain",
+        "courseDescription": "Learn how to identify, assess, and mitigate risks in supply chain operations to ensure continuity and resilience.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/ana_ramirez.jpg"
+      },
+      {
+        "name": "Jorge Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Portfolio Risk Management",
+        "courseDescription": "Explore advanced portfolio risk management techniques to optimize risk-return trade-offs and enhance portfolio performance.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/jorge_gomez.jpg"
+      },
+      {
+        "name": "Valentina Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Entrepreneurial Finance",
+        "courseDescription": "Learn how to manage financial resources effectively and make strategic financial decisions to support business growth.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/valentina_fernandez.jpg"
+      },
+      {
+        "name": "Julian Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Investment Risk Assessment",
+        "courseDescription": "Learn how to assess various types of investment risks and develop risk management strategies to protect investment portfolios.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/julian_ramirez.jpg"
+      },
+      {
+        "name": "Isabel Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Crisis Management in Business",
+        "courseDescription": "Discover effective strategies for crisis management to mitigate risks, protect reputation, and ensure business continuity.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/isabel_gomez.jpg"
+      },
+      {
+        "name": "Gabriela Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "International Business Expansion Strategies",
+        "courseDescription": "Learn strategies and tactics for expanding business operations globally while effectively managing associated risks.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/gabriela_ramirez.jpg"
+      },
+      {
+        "name": "Andres Fernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Financial Risk Analysis",
+        "courseDescription": "Gain expertise in analyzing financial risks and develop strategies to mitigate risks and protect assets.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/andres_fernandez.jpg"
+      },
+      {
+        "name": "Liliana Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Value Investing Strategies",
+        "courseDescription": "Discover value investing principles and strategies to identify undervalued assets and achieve long-term investment success.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/liliana_gomez.jpg"
+      },
+      {
+        "name": "Juan Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Enterprise Risk Management",
+        "courseDescription": "Learn how to implement comprehensive enterprise risk management frameworks to identify, assess, and mitigate risks.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/juan_hernandez.jpg"
+      },
+      {
+        "name": "Carmen Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Business Continuity Planning",
+        "courseDescription": "Develop business continuity plans to mitigate risks, maintain operations, and ensure resilience in the face of disruptions.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/carmen_ramirez.jpg"
+      },
+      {
+        "name": "Alejandro Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Quantitative Investment Analysis",
+        "courseDescription": "Master quantitative analysis techniques to evaluate investment opportunities and make data-driven investment decisions.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/alejandro_gomez.jpg"
+      },
+      {
+        "name": "Daniela Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Risk Management in Real Estate Investment",
+        "courseDescription": "Learn how to assess and mitigate risks in real estate investment projects to maximize returns and minimize losses.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/daniela_hernandez.jpg"
+      },
+      {
+        "name": "Hector Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Cost Management",
+        "courseDescription": "Discover strategies for managing costs effectively to improve profitability and gain a competitive edge in the market.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/hector_ramirez.jpg"
+      },
+      {
+        "name": "Eva Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Risk Assessment in Investment Banking",
+        "courseDescription": "Gain insights into risk assessment techniques and practices specific to the investment banking industry.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/eva_gomez.jpg"
+      },
+      {
+        "name": "Raul Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Leadership for Risk Management",
+        "courseDescription": "Develop strategic leadership skills to effectively manage risks and drive organizational resilience and success.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/raul_hernandez.jpg"
+      },
+      {
+        "name": "Ana Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Investment Risk Modeling",
+        "courseDescription": "Learn how to build and analyze investment risk models to assess risk exposure and inform investment decisions.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/ana_gomez.jpg"
+      },
+      {
+        "name": "Martin Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Business Risk Analysis",
+        "courseDescription": "Develop skills in strategic business risk analysis to identify and mitigate risks that impact organizational objectives.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/martin_ramirez.jpg"
+      },
+      {
+        "name": "Lorena Fernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Risk Management in Financial Institutions",
+        "courseDescription": "Explore risk management practices specific to financial institutions, including banks, insurance companies, and investment firms.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/lorena_fernandez.jpg"
+      },
+      {
+        "name": "Pablo Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Marketing Risk Analysis",
+        "courseDescription": "Learn how to assess and mitigate marketing risks to ensure the success of marketing campaigns and initiatives.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/pablo_gomez.jpg"
+      },
+      {
+        "name": "Laura Ramirez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Enterprise Risk Governance",
+        "courseDescription": "Understand the principles and best practices of enterprise risk governance to enhance risk oversight and decision-making.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/laura_ramirez.jpg"
+      },
+      {
+        "name": "Felipe Hernandez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Operational Risk Assessment",
+        "courseDescription": "Learn how to identify, assess, and mitigate operational risks to ensure operational resilience and business continuity.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/felipe_hernandez.jpg"
+      },
+      {
+        "name": "Natalia Gomez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Investment Risk Management Frameworks",
+        "courseDescription": "Explore different investment risk management frameworks and methodologies to effectively manage investment risks.",
+        "ratings": 5,
+        "price": 1400,
+        "imageUrl": "https://example.com/natalia_gomez.jpg"
+      },
+      {
+        "name": "Roberto Ramirez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Supply Chain Risk Management",
+        "courseDescription": "Learn how to identify, assess, and mitigate risks in supply chain operations to ensure supply chain resilience.",
+        "ratings": 4,
+        "price": 1200,
+        "imageUrl": "https://example.com/roberto_ramirez.jpg"
+      },
+      {
+        "name": "Sara Hernandez",
+        "isVerifiedExpert": true,
+        "businessOnlineCourseTitle": "Investment Risk Assessment Models",
+        "courseDescription": "Learn how to develop and apply investment risk assessment models to quantify and manage investment risks.",
+        "ratings": 5,
+        "price": 1500,
+        "imageUrl": "https://example.com/sara_hernandez.jpg"
+      },
+      {
+        "name": "Fernando Gomez",
+        "isVerifiedExpert": false,
+        "businessOnlineCourseTitle": "Strategic Financial Risk Management",
+        "courseDescription": "Develop strategies for identifying, assessing, and managing financial risks to achieve financial objectives.",
+        "ratings": 4,
+        "price": 1100,
+        "imageUrl": "https://example.com/fernando_gomez.jpg"
+      },
+      
 ]
 
 

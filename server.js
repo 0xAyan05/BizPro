@@ -23,8 +23,18 @@ app.get('/', (req, res)=>{
 
 app.get('/genres/:genre', (req, res)=>{
     const { genre } = req.params
-    const targ = genre.split(' ')[0]
-    const filtered_courses = courses.filter( c => c.businessOnlineCourseTitle.includes(targ))
+    const targ = genre.match(/\b\w+\b/g)
+    let filtered_courses = []
+
+    targ.forEach(e => {
+        if (e[0].toLowerCase() != e[0]) {
+            filtered_courses.push(
+                ...courses.filter(c => c.businessOnlineCourseTitle.includes(`${e}`))
+            )
+            console.log(filtered_courses)
+        }
+    })
+
     res.render('genres', { genre, courses: filtered_courses })
 })
 
