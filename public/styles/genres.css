@@ -24,6 +24,9 @@ body {
     background-image: linear-gradient(135deg, #062325, #143e42, #2f686d, #387b81, #3d8e94);
     color: #fff;
     font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .header {

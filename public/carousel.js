@@ -19,7 +19,6 @@ window.addEventListener('mouseup', e =>{
 })
 carousel.addEventListener('mousemove', e => {
    if(!dragging) return
-   
    else carousel.scrollLeft = distance - (e.pageX - start) *1.5
 })
 
@@ -27,7 +26,6 @@ carousel.addEventListener('mousemove', e => {
 fetch('http://localhost:5000/api/services')
 .then(res => res.json())
 .then(data => {
-    console.log(data.length)
     data.forEach((e, i) => {
         carousel.innerHTML += `
         <div class="card" style="background-image: url('${e.poster}')" >
