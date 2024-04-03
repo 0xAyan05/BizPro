@@ -27,14 +27,13 @@ app.get('/genres/:genre', (req, res)=>{
     let filtered_courses = []
 
     targ.forEach(e => {
-        if (e[0].toLowerCase() != e[0]) {
+        if ((e[0].toLowerCase() != e[0]) & e!='Business') {
             filtered_courses.push(
                 ...courses.filter(c => c.businessOnlineCourseTitle.includes(`${e}`))
             )
-            console.log(filtered_courses)
         }
     })
-
+    
     res.render('genres', { genre, courses: filtered_courses })
 })
 
