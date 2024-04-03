@@ -23,12 +23,13 @@ app.get('/', (req, res)=>{
 
 app.get('/genres/:genre', (req, res)=>{
     const { genre } = req.params
-    res.render('genres', { genre })
+    const targ = genre.split(' ')[0]
+    const filtered_courses = courses.filter( c => c.businessOnlineCourseTitle.includes(targ))
+    res.render('genres', { genre, courses: filtered_courses })
 })
 
 app.get('/api/services', (req, res)=>{
     res.status(200).json(top_services)
 })
-
 
 app.listen(PORT)

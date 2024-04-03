@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles//genres.css">
 </head>
 <body>
-    <%= genre  %>
+    <div class="header">
+        <%= genre  %>
+    </div>
+
+    <div class="courses-container">
+        <% courses.forEach(e => { %>
+            <div class="course-card">
+                <div class="course-picture"><img src=`${e.imageUrl}` alt=""></div>
+                <div class="course-title"><%= e.businessOnlineCourseTitle %></div>
+                <div class="course-expert-name"><%= e.name %></div>
+                <div class="course-description"><%= e.courseDescription %></div>
+                <div class="price">P <%= e.price %></div>
+                <div class="ratings">
+                    <% for (let i=0; i< e.ratings; i++) { %>
+                        <div class="stars"></div>
+                        <% } %>
+                </div>
+            </div>
+            <% }) %>
+    </div>
 </body>
 </html>
