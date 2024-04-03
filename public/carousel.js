@@ -5,7 +5,7 @@ let dragging = false, start, distance
 btn.forEach(b =>{
     b.addEventListener('click', e => {
         console.log(e.className)
-        carousel.scrollLeft += b.className=="left"? -265: 265
+        carousel.scrollLeft += b.className=="left"? -1060: 1060
     })
 })
 
