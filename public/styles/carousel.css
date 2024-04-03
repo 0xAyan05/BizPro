@@ -63,10 +63,11 @@
     user-select: none;
 }
 .popCourse {
-    margin: 19px;
+    margin: 15px;
     color: #fff;
     left: -1rem;
     top: -4rem;
     z-index: 200;
     position: absolute;
+    font-size: x-large;
 }
