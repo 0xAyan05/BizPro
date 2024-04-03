@@ -1,0 +1,20 @@
+{
+  "name": "bizpro",
+  "version": "1.0.0",
+  "description": "\"Meet BizPro: a platform where business owners &amp; experts collaborate. We assist small &amp; medium-sized businesses with personalized advice &amp; paid courses. Our goal is to empower small businesses to thrive by providing accessible expert guidance &amp; learning.\"",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
