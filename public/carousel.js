@@ -61,17 +61,18 @@ function createCarousel(btn, carousel, path) {
                 <div class="ex-ratings" >${dt.ratings}</div>
             </div>`
 
-            const cards = document.querySelectorAll(isCo? '.card': '.ex-card')
-        cards.forEach(card => {
-        card.addEventListener('click', (e)=>{
-            const route = isCo? `/genres/${card.children[0].textContent}`: `/experts/${dt.id}`
+                const cards = document.querySelectorAll(isCo? '.card': '.ex-card')
+            cards.forEach(card => {
+            card.addEventListener('click', (e)=>{
+                const route = isCo? `/genres/${card.children[0].textContent}`:
+                    `/experts/${card.children[1].textContent}`
 
-            fetch(`http://localhost:5000${route}`)        
-            .then(res => {
-                window.open(res.url, '_self')
+                fetch(`http://localhost:5000${route}`)        
+                .then(res => {
+                    window.open(res.url, '_self')
+                })
             })
         })
-    })
         })
     })
     .catch(err => console.log(err))

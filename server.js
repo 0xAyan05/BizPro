@@ -25,9 +25,9 @@ app.get('/', (req, res)=>{
     res.status(200).sendFile('index.html', { root: './public/views'})
 })
 
-app.get('/experts/:id', (req, res)=>{
-    const { id } = req.params
-    const targ_expert = experts.find(e => e['id']===id)
+app.get('/experts/:name', (req, res)=>{
+    const { name } = req.params
+    const targ_expert = experts.find(e => e['name']===name)
 
     res.render('expertsprofile', { expert: targ_expert })
 })
