@@ -63,8 +63,9 @@ app.post('/api/search/suggestions', (req, res)=>{
     res.status(200).header('application/json').json(suggestions)
 })
 
-app.get('/api/course/info', (req, res)=>{
-    res.json(descriptions)
+app.get('/course/info', (req, res)=>{
+    
+    res.render('details', { info: descriptions })
 })
 
 app.listen(PORT)
