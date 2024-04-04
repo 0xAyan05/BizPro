@@ -4,6 +4,7 @@ const cors = require('cors')
 const path = require('path')
 
 const courses = require('./utils/courses.js')
+const experts = require('./utils/popexperts.js')
 const top_services = require('./utils/services.js')
 const descriptions = require('./utils/description.js')
 const users = require('./utils/users.js')
@@ -22,6 +23,13 @@ app.use(express.json())
 
 app.get('/', (req, res)=>{
     res.status(200).sendFile('index.html', { root: './public/views'})
+})
+
+app.get('/experts/:id', (req, res)=>{
+    const { id } = req.params
+    const targ_expert = experts.find(e => e['id']===id)
+
+    res.render('expertsprofile', { expert: targ_expert })
 })
 
 app.get('/genres/:genre', (req, res)=>{
@@ -53,6 +61,9 @@ app.get('/search/:filter', (req, res)=>{
 app.get('/api/services', (req, res)=>{
     res.status(200).json(top_services)
 })
+app.get('/api/experts', (req, res)=>{
+    res.status(200).json(experts)
+})
 
 app.post('/api/search/suggestions', (req, res)=>{
     const { title } = req.body
@@ -76,8 +87,7 @@ app.post('/api/users/auth', (req, res)=>{
     const { username, password } = req.body
 
     res.setHeader('Content-Type', 'application/json')
-
-    console.log(req.body)
+console.log(users[users.length-1])
     if(!username && !password)
         return res.json({ msg: 'Please fill all fields', stats: -1 })
 
@@ -92,14 +102,14 @@ app.post('/api/users/auth', (req, res)=>{
 })
 
 app.post('/api/users/signup', (req,res)=>{
-    const { username, firstname, lastname, email, password } = req.body
+    const { username, fname, lname, email, password } = req.body
 
-    if(!username || !firstname || !lastname || !email || !password )
+    if(!username && !fname && !lname && !email && !password)
         return res.json({ msg: 'All fields are required.', stats: -1 })
-
+        
     const new_user = { 
         id: crypto.randomUUID(),
-        name: `${firstname} ${lastname}`,
+        name: `${fname} ${lname}`,
         username: username,
         password: password,
         email: email

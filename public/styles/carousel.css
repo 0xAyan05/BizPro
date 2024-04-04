@@ -27,11 +27,11 @@
     transform: translateY(7.5rem);
 }
 
-.left {
+.left, .ex-left {
     left: -4.5rem;
 }
 
-.right {
+.right, .ex-right {
     right: -4.5rem;
 }
 
@@ -70,4 +70,84 @@
     z-index: 200;
     position: absolute;
     font-size: x-large;
+}
+
+/* <!-- carousel experts section -->
+<section class="carousel-experts-section">
+  <div class="ex-carousel-container">
+    <h1 class="popExperts">Popular Experts</h1>
+    <button class="ex-left"><i class="fas fa-chevron-left"></i></button>
+    <div class="ex-carousel"></div>
+    <button class="ex-right"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section> */
+
+.carousel-experts-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.ex-carousel-container{
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    width: 87%;
+    height: 20rem;
+    background-color: transparent;
+}
+.popExperts {
+    margin: 15px;
+    color: #fff;
+    left: -1rem;
+    top: -4rem;
+    z-index: 200;
+    position: absolute;
+    font-size: x-large;
+}
+
+.ex-carousel {
+    width: 100%;
+    overflow: hidden;
+    gap: 10px;
+    display: flex;
+    scroll-behavior: smooth;
+    background-color: transparent;
+}
+
+.ex-carousel-container button {
+    z-index: 1000;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    color: white;
+    transform: translateY(7.5rem);   
+}
+
+/* `<div class="ex-card" >
+        <div class="ex-name" >${dt.name}</div>
+        <div class="ex-ratings" >${dt.ratings}</div>
+    </div>` */
+
+.ex-card {
+    background-color: blue;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5rem 2rem;
+    border-radius: 10px;
+}
+.ex-card div {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: -2.5rem;
+    width: 12rem;
+    user-select: none;
+}
+.expert-picture{
+    padding: 5rem;
+    background-color: antiquewhite;
 }

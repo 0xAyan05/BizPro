@@ -1,6 +1,5 @@
-const users = require('./users.js')
+const courses = require('./courses.js')
 
-users.forEach((e,i)=>{
-    users[i] = { id: crypto.randomUUID(), ...e }
-    console.log(users[i],',')
+courses.forEach(e => {
+    if(e.isVerifiedExpert) console.log(`{ id: '${crypto.randomUUID()}', name: '${e.name}', ratings: ${e.ratings}},`)
 })

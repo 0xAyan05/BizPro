@@ -269,7 +269,7 @@ form.sign-in-form {
     pointer-events: all;
 }
 
-.err-msg {
+.err-msg, .signup-errmsg {
     height: .5rem;
     margin-bottom: 5px;
     color: red;
