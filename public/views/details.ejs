@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= info.Course.Title %></title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="navbar">
+        <a href="#" class="logo">BizPro</a>
+      </nav>
+      <section class="whole">
+        <div class="course-video-container">
+            <video src=""></video>
+            <div class="description">
+                <h3 class="course-creator"><%= info.Course.Instructor %></h3>
+                <p class="course-description">
+                    <%= info.Course.Description %>
+                </p>
+                <p class="duration">Duration : <%= info.SubscriptionDetails.Duration %></p>
+                <p class="price">Price : <%= info.SubscriptionDetails.Price %></p>
+                <p class="acccess">Access : <%= info.SubscriptionDetails.Access %></p>
+                <h3 class="course-rating"><%= info.AverageRating %></h3>
+            </div>
+            <div class="comments-container">
+                <% info.Comments.forEach(e => { %>
+                    <div class="comments-card">
+                        <div class="comment-participant"><%= e.Participant %>
+                        <p class="comment-review">
+                            <%= e.Review %>
+                        </p>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+        </div>
+
+        <div class="course-episodes">
+            
+
+        </div>
+
+      </section>
+    </header>
+  </body>
 </html>
