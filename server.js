@@ -5,6 +5,7 @@ const path = require('path')
 
 const courses = require('./utils/courses.js')
 const top_services = require('./utils/services.js')
+const descriptions = require('./utils/description.js')
 
 const PORT = process.env.PORT || 5000
 
@@ -60,6 +61,10 @@ app.post('/api/search/suggestions', (req, res)=>{
             c.businessOnlineCourseTitle[0].toLowerCase()==title[0].toLowerCase()
     )
     res.status(200).header('application/json').json(suggestions)
+})
+
+app.get('/api/course/info', (req, res)=>{
+    res.json(descriptions)
 })
 
 app.listen(PORT)
