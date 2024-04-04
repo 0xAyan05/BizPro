@@ -64,7 +64,6 @@ app.post('/api/search/suggestions', (req, res)=>{
 })
 
 app.get('/course/info', (req, res)=>{
-    
     res.render('details', { info: descriptions })
 })
 
