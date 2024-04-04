@@ -1,0 +1,42 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 0vh;
+    border: none;
+    position: relative;
+}
+.footer-container {
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    width: 87%;
+    height: 20rem;
+    background-color: transparent;
+    gap: 100px;
+}
+.about-more {
+    margin: 15px;
+    color: #fff;
+    left: -1rem;
+    top: -4rem;
+    z-index: 200;
+    position: absolute;
+    font-size: x-large;
+    
+}
+.category-container, .about-container, .community-container, .help-container {
+    padding: 20px;
+}
+.category-container h2, .about-container h2, .community-container h2, .help-container h2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.category-container a, .about-container a, .community-container a, .help-container a{
+    text-decoration: none;
+    display: flex;
+    color: rgba(61, 142, 148, 0.8);
+    margin-top: 10px;
+}

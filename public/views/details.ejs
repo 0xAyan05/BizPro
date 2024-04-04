@@ -3,11 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><%= info.Course.Title %></title>
+    <link rel="stylesheet" href="../styles/details.css">
+    <link rel="shortcut icon" href="../assets/Logo.png" type="x-icon" />
+    <link rel="stylesheet" href="../styles/footer.css">
 </head>
 <body>
-    <div>
-        <div><%= info.Course.Title %></div>
+    <header>
+            <nav class="navbar">
+              <a href="../views/index.html" class="logo">BizPro</a>
+              <ul class="menu-links">
+                <li><a href="#">Upgrade Your Business</a></li>
+                <li><a href="../views/index.html">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">About</a></li>
+                <li class="join-btn" onclick="">
+                  <a href="../views/windowform.html">Join Us</a>
+                </nav>
+          </header>
+    <div class="details">
+        
+        <section class="whole">
+            <div class="video-container">
+                <video src="" controls></video>
+                <div class="video-controls">
+                   
+                </div>
+                <div class="description">
+                    <h2 class="course-creator"> <%= info.Course.Title %></h2><br><hr><br>
+                    <h3 class="course-creator"> Instructor : <%= info.Course.Instructor %></h3><br>
+                    <h4>Description :</h4>
+                    <p class="course-description">
+                        <%= info.Course.Description %>
+                    </p>
+                    <p class="duration">Duration : <%= info.SubscriptionDetails.Duration %></p>
+                    <p class="price">Price       : <%= info.SubscriptionDetails.Price %></p>
+                    <p class="acccess">Access    : <%= info.SubscriptionDetails.Access %></p>
+                    <p class="rating">Ratings    : <%= info.AverageRating %></p>
+                </div>
+                <div class="comments-container">
+                    <% info.Comments.forEach(e => { %>
+                        <div class="comments-card">
+                            <h4 class="comment-participant"><%= e.Participant %> </h4> <br>
+                             <p class="comment-review">
+                                    <%= e.Review %>
+                                </p>
+                        </div>
+                    <% }) %>
+                </div>
+            </div>
+            <div class="course-episodes">
+                <ul>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                </ul>
+            </div>
+        </section>
     </div>
+    <section class="footer">
+        <div class="footer-container">
+          <h1 class="about-more">About More</h1>
+          <div class="category-container"><h2>Categories</h2>
+            <a href="">Finance & Accounting</a>
+            <a href="">Entrepreneurship</a>
+            <a href="">Business Strategy</a>
+            <a href="">Negotiation & Sales Training</a>
+            <a href="">Business Essentials</a>
+            <a href="">Digital Marketing</a>
+            <a href="">Leadership and Management</a>
+            <a href="">Business Analysis</a>        
+          </div>
+  
+          <div class="about-container"><h2>About</h2>
+            <a href="">Businesses</a>
+            <a href="">Press and News</a>
+            <a href="">Partnership</a>
+            <a href="">Privacy and Policy</a>
+            <a href="">Terms of Service</a>    
+          </div>
+  
+          <div class="community-container"><h2>Community</h2>
+            <a href="">Customer Success Stories</a>
+            <a href="">Community Hub</a>
+            <a href="">Forum</a>
+            <a href="">Events</a>
+            <a href="">Blog</a>
+            <a href="">Community Standards</a>       
+          </div>
+  
+          <div class="help-container"><h2>Support</h2>
+            <a href="">Help & Support</a>
+            <a href="">Trust & Safety</a>
+            <a href="">Selling on BizPro</a>
+            <a href="">Buying on Bizpro</a>
+            <a href="">Bizpro Guides</a>
+            <a href="">Learn</a>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
