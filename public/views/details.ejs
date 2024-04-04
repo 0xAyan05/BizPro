@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= info.Course.Title %></title>
-  </head>
-  <body>
-    <header class="navbar">
-      <nav class="navbar">
-        <a href="#" class="logo">BizPro</a>
-      </nav>
-      <section class="whole">
-        <div class="course-video-container">
-            <video src=""></video>
-            <div class="description">
-                <h3 class="course-creator"><%= info.Course.Instructor %></h3>
-                <p class="course-description">
-                    <%= info.Course.Description %>
-                </p>
-                <p class="duration">Duration : <%= info.SubscriptionDetails.Duration %></p>
-                <p class="price">Price : <%= info.SubscriptionDetails.Price %></p>
-                <p class="acccess">Access : <%= info.SubscriptionDetails.Access %></p>
-                <h3 class="course-rating"><%= info.AverageRating %></h3>
-            </div>
-            <div class="comments-container">
-                <% info.Comments.forEach(e => { %>
-                    <div class="comments-card">
-                        <div class="comment-participant"><%= e.Participant %>
-                        <p class="comment-review">
-                            <%= e.Review %>
-                        </p>
+    <link rel="stylesheet" href="../styles/details.css">
+    <link rel="shortcut icon" href="../assets/Logo.png" type="x-icon" />
+</head>
+<body>
+    <div class="details">
+        <nav class="navbar">
+            <a href="#" class="logo">BizPro</a>
+        </nav>
+        <section class="whole">
+            <div class="video-container">
+                <video src="" controls></video>
+                <div class="video-controls">
+                   
+                </div>
+                <div class="description">
+                    <h2 class="course-creator"> <%= info.Course.Title %></h2><br><hr><br>
+                    <h3 class="course-creator"> Instructor : <%= info.Course.Instructor %></h3><br>
+                    <h4>Description :</h4>
+                    <p class="course-description">
+                        <%= info.Course.Description %>
+                    </p>
+                    <p class="duration">Duration : <%= info.SubscriptionDetails.Duration %></p>
+                    <p class="price">Price       : <%= info.SubscriptionDetails.Price %></p>
+                    <p class="acccess">Access    : <%= info.SubscriptionDetails.Access %></p>
+                    <p class="rating">Ratings    : <%= info.AverageRating %></p>
+                </div>
+                <div class="comments-container">
+                    <% info.Comments.forEach(e => { %>
+                        <div class="comments-card">
+                            <h4 class="comment-participant"><%= e.Participant %> </h4> <br>
+                             <p class="comment-review">
+                                    <%= e.Review %>
+                                </p>
                         </div>
-                    </div>
                     <% }) %>
+                </div>
             </div>
-        </div>
-
-        <div class="course-episodes">
-            
-
-        </div>
-
-      </section>
-    </header>
-  </body>
+            <div class="course-episodes">
+                <ul>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                    <li class="episodes"></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
 </html>

@@ -33,5 +33,4 @@ const descriptions = {
   AverageRating: "5/5 stars",
 };
 
-
 module.exports = descriptions;
