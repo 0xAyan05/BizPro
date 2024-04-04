@@ -32,7 +32,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    margin-right: 11px;
+    margin-right: 10px;
     width: 100%;
     z-index: 1;
     padding: 4px;
@@ -62,6 +62,9 @@ header .navbar {
     text-decoration: none;
     transition: 0.2s ease;
     font-size: larger;
+}
+.logo {
+    margin-left: 1px;
 }
 
 .navbar .menu-links .language-item a {
