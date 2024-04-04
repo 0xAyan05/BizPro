@@ -67,6 +67,14 @@ header .navbar {
     border-radius: 4px;
 }
 
+.navbar .menu-links .name {
+    border: 3px solid #fff;
+    color: #fff;
+    padding: 8px 15px;
+    transform: translateX(5rem);
+    border-radius: 4px;
+}
+
 .navbar .menu-links .join-btn a:hover {
     color: #fff;
     border-color: transparent;

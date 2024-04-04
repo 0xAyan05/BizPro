@@ -268,3 +268,10 @@ form.sign-in-form {
 .container.sign-up-mode .right-panel {
     pointer-events: all;
 }
+
+.err-msg {
+    height: .5rem;
+    margin-bottom: 5px;
+    color: red;
+    font-size: smaller;
+}
