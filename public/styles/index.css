@@ -191,6 +191,7 @@ header .navbar {
     margin-top: 138px;
     margin-right: 5px;
     height: 520px;
+    filter: contrast(105%);
     transform: translateX(-3rem);
     scale: 1.3;
 }
